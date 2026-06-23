@@ -1,0 +1,15 @@
+=== generate_backdoor_task_refined | model=openrouter/deepseek/deepseek-v3.2 | effort=none | N=15 | sandbox=local ===
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:275: UserWarning: Backdoor response had no ```python``` block; storing empty code.
+  warnings.warn("Backdoor response had no ```python``` block; storing empty code.")
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:278: UserWarning: Backdoor response had no <EXAMPLE> tag; storing empty trigger.
+  warnings.warn("Backdoor response had no <EXAMPLE> tag; storing empty trigger.")
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:275: UserWarning: Backdoor response had no ```python``` block; storing empty code.
+  warnings.warn("Backdoor response had no ```python``` block; storing empty code.")
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:278: UserWarning: Backdoor response had no <EXAMPLE> tag; storing empty trigger.
+  warnings.warn("Backdoor response had no <EXAMPLE> tag; storing empty trigger.")
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:278: UserWarning: Backdoor response had no <EXAMPLE> tag; storing empty trigger.
+  warnings.warn("Backdoor response had no <EXAMPLE> tag; storing empty trigger.")
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:278: UserWarning: Backdoor response had no <EXAMPLE> tag; storing empty trigger.
+  warnings.warn("Backdoor response had no <EXAMPLE> tag; storing empty trigger.")
+/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/part5_ai_control/solutions.py:278: UserWarning: Backdoor response had no <EXAMPLE> tag; storing empty trigger.
+  warnings.warn("Backdoor response had no <EXAMPLE> tag; storing empty trigger.")

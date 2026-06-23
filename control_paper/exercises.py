@@ -22,7 +22,17 @@ from inspect_ai.util import ExecResult, sandbox
 # Make sure exercises are in the path
 section = "part5_ai_control"
 # The part5_ai_control package lives alongside this file in control_paper/.
-exercises_dir = Path(__file__).resolve().parent if "__file__" in globals() else Path.cwd()
+if "__file__" in globals():
+    exercises_dir = Path(__file__).resolve().parent
+else:
+    # Interactive (# %%) execution: __file__ is undefined, so locate control_paper/
+    # (which holds the part5_ai_control package) relative to the current dir.
+    _cands = [c / section for c in [Path.cwd(), *Path.cwd().parents]] + [
+        p / "control_paper" / section
+        for c in [Path.cwd(), *Path.cwd().parents]
+        for p in c.rglob("should-claude-monitor-claude")
+    ]
+    exercises_dir = next(c.parent for c in _cands if c.exists())
 section_dir = exercises_dir / section
 if str(exercises_dir) not in sys.path:
     sys.path.append(str(exercises_dir))
