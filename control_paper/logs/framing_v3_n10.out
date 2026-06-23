@@ -1,0 +1,51 @@
+
+##### cond_sys_only (N=10) #####
+
+{
+  "n_scored": 10,
+  "success": "2/10",
+  "refusal_per_sample": "0/10",
+  "refusal_per_turn": "0/66 (0%)",
+  "errored": 0,
+  "time_per_q_s": 46.8,
+  "cost_usd": 0.4116,
+  "wall_s": 68.2
+}
+
+##### cond_reworded (N=10) #####
+
+{
+  "n_scored": 10,
+  "success": "1/10",
+  "refusal_per_sample": "0/10",
+  "refusal_per_turn": "0/68 (0%)",
+  "errored": 0,
+  "time_per_q_s": 42.2,
+  "cost_usd": 0.3782,
+  "wall_s": 67.2
+}
+
+
+=== FRAMING V3: step-prompt rewording (GPT-5.2, no thinking) ===
+{
+  "cond_sys_only": {
+    "n_scored": 10,
+    "success": "2/10",
+    "refusal_per_sample": "0/10",
+    "refusal_per_turn": "0/66 (0%)",
+    "errored": 0,
+    "time_per_q_s": 46.8,
+    "cost_usd": 0.4116,
+    "wall_s": 68.2
+  },
+  "cond_reworded": {
+    "n_scored": 10,
+    "success": "1/10",
+    "refusal_per_sample": "0/10",
+    "refusal_per_turn": "0/68 (0%)",
+    "errored": 0,
+    "time_per_q_s": 42.2,
+    "cost_usd": 0.3782,
+    "wall_s": 67.2
+  }
+}
