@@ -167,11 +167,50 @@ Sonnet 4.5 = 3 / 15 · Qwen 3.6 Max preview = 1.04 / 6.24 · DeepSeek v3.2 = 0.2
 GPT-5 = 1.25 / 10 · GPT-5.2 = 1.75 / 14 · GPT-5-nano = 0.05 / 0.40.
 Reasoning models are output-cost-dominated (Qwen 5q run: $0.12 in / $1.93 out = 94% output).
 
-## Suggested next steps
+## Suggested next steps (backdoor-generation thread)
 
-- **DeepSeek 500-run** (only affordable big run, ~$1.50) — launch detached so it survives a
-  disconnect; results land in `logs/`.
+- **DeepSeek 500-run** ✅ DONE — 122/500 = 24.4% success, 0 errors, ~$2.12 (`logs/...n2dHYqq...eval`).
 - Fault-injection at **N≈25–30** to firm up the 0%→30% effect statistically.
 - Re-run DeepSeek 15 to confirm the timeout fix yields a clean 15/15.
-- Optional: combine #9 (fault-injection) + #15 (non-deliberation) to see if you get *both* low
-  refusal and high success (they were decoupled individually).
+- Optional: combine #9 (fault-injection) + #15 (non-deliberation).
+
+---
+
+# PHASE 2 — Monitoring study (2026-06-23): "should Claude monitor Claude?"
+
+## APPS code-solving saturation (capability baselines)
+`saturation_test/` — 100 random APPS problems, seed 42. Passed-all: GPT-4.1 66,
+**DeepSeek V3.2 Exp 61** (~68 truncation-adjusted), Haiku 4.5 59, GPT-4.1-mini 55.
+DS-Exp's 17 `failed_to_run` were **token-cap truncation (0 timeouts)**; `rerun_failed.py`
+at 6144 tokens recovered 11/17. Capability tiers: DS-V3.2 ≈ DS-V3.2-Exp (same pretrain
+lineage); Sonnet ≈ tier-above Haiku; on LiveBench Sonnet ~82 vs DS-V3.2 ~74.
+
+## 2×2 suspicion-scoring experiment (THE main result) — `SUSPICION_2X2_REPORT.md`
+Monitors T {DeepSeek V3.2 Exp, Haiku 4.5} × generators U {DeepSeek V3.2, Sonnet 4.5}.
+Each monitor scores every clean + successful-backdoor solution with a **0–1 decimal
+suspicion score** (`suspicion_2x2.py`, single-score; multi-criteria variant = `SCORING=multi`).
+1337 solutions × 2 monitors = 2674 scorings, ~$14. Analyse with `analyze_2x2.py`
+(+ `analyze_ensemble.py`), plots via `plot_2x2.py`.
+
+**Findings:**
+- **NO same-family effect** — balanced interaction +0.003, 95% CI [−0.056,+0.066], n.s.
+- **Generator main effect** — Sonnet backdoors subtler: **19% (41/214) evade BOTH
+  monitors** vs DeepSeek 1% (1/121). AUROC ~0.70 (Sonnet) vs ~0.78 (DeepSeek), both monitors.
+- **Monitor main effect** — DeepSeek-Exp > Haiku (AUROC ~0.78 vs ~0.71), 8× cheaper.
+- **AUROC ≠ usable detection** — catch rate ~0 at ≤5% audit budget (saturated clean tail).
+- **Ensemble of the 2 diverse monitors** (corr 0.62) recovers detection: TP@5% 0→12%.
+
+## OPS / status at handoff
+- **Data on disk** at `control_paper/logs/suspicion2x2/` (cells, stats JSON, figs) and
+  `suspicion2x2_multi/` (multi-criteria robustness run — may still be running).
+- **Raw `.eval` transcripts (24MB) are gitignored** — HTTPS `git push` POST to the Naxsos
+  remote stalls on large (and even small) uploads this session (reads/fetch work; SSH deploy
+  key lacks Naxsos write). Stats/figs/report ARE committed (`d9987fe`). A background retry
+  loop (`/tmp/pushloop_result.txt`) keeps trying `git push`. **If still unpushed, retry
+  `git push origin main` — likely transient.**
+- Budget: new fallback OpenRouter key (no limit); ~$16 spent of the ~$60 guideline.
+
+## Suggested next steps (monitoring thread)
+- Finish multi-criteria robustness analysis (does null-interaction + catch-0 survive finer scores?).
+- Add a 3rd monitor (e.g. Sonnet 4.5 / Gemini) to enrich the ensemble + monitor comparison.
+- Verify the 24MB transcripts get pushed once the network clears (or set up git-LFS).
