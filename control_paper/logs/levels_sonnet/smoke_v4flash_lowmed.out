@@ -1,0 +1,23 @@
+=== deepseek effort='low' | n=3 | model=openrouter/deepseek/deepseek-v4-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/deepseek/deepseek-v4-flash                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: low, fail_on_error:    
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                            0:05:46                                  
+openrouter/deepseek/deepseek-v4-flash  30,319 tokens [I: 9,339, CW: 0, CR: 0, O:
+                                     20,980, R: 19,377]                         
+                                                                                
+sus_scorer_01                                                                   
+mean           0.000                                                            
+stderr         0.577                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-50-53-00-00_task_mgADavB9jjy9FZikSyyUu2.eval                        
+                                                                                [06/24/26 03:56:39] WARNING  The 'score' field is deprecated.      logger.py:278
+                             Access sample scores through 'scores'              
+                             instead.                                           
+LEVELSUM {"model_tag": "deepseek", "model": "openrouter/deepseek/deepseek-v4-flash", "effort": "low", "n_scored": 3, "n_parsed": 2, "unparsed": 1, "mean": 0.5, "tok_in": 9339, "tok_out": 20980, "tok_reasoning": 19377, "cost_usd": 0.0046, "elapsed_sec": 346.9, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-50-53-00-00_task_mgADavB9jjy9FZikSyyUu2.eval"}
+=== deepseek effort='medium' | n=3 | model=openrouter/deepseek/deepseek-v4-flash ===

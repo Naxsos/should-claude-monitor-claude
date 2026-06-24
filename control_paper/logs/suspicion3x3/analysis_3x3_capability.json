@@ -1,0 +1,98 @@
+{
+  "within_monitor": {
+    "dsexp": {
+      "own_gen": "deepseek",
+      "own_auroc": 0.8416967213114754,
+      "others": {
+        "sonnet": 0.7172325581395349,
+        "gpt": 0.7394207770379468
+      },
+      "delta": 0.11337005372273457,
+      "ci": [
+        0.07225247016113567,
+        0.15421157815982456
+      ],
+      "sig": "SIGNIFICANT",
+      "capability": "monitor MORE capable (Exp reasoning vs base V3.2)"
+    },
+    "haiku": {
+      "own_gen": "sonnet",
+      "own_auroc": 0.6861906976744186,
+      "others": {
+        "deepseek": 0.7259176230468096,
+        "gpt": 0.6126630752255469
+      },
+      "delta": 0.016900348538240406,
+      "ci": [
+        -0.030630977960125927,
+        0.06277326562625185
+      ],
+      "sig": "n.s. (CI spans 0)",
+      "capability": "monitor LESS capable (Haiku 4.5 vs Sonnet 4.5)"
+    },
+    "gptnano": {
+      "own_gen": "gpt",
+      "own_auroc": 0.7169612903225806,
+      "others": {
+        "deepseek": 0.9305742632806597,
+        "sonnet": 0.7076465116279069
+      },
+      "delta": -0.10214909713170273,
+      "ci": [
+        -0.15007393092482857,
+        -0.053290877087023625
+      ],
+      "sig": "SIGNIFICANT",
+      "capability": "monitor LESS capable (GPT-5-nano vs GPT-5.2)"
+    }
+  },
+  "ensemble": {
+    "deepseek": {
+      "singles": {
+        "dsexp": 0.8410306271268838,
+        "haiku": 0.7253868204449063,
+        "gptnano": 0.9300705748244011
+      },
+      "best": "gptnano",
+      "ensemble": 0.9249744354852228,
+      "delta": -0.005096139339178296,
+      "ci": [
+        -0.018364541598913653,
+        0.007971099525589609
+      ],
+      "sig": "n.s. (CI spans 0)"
+    },
+    "sonnet": {
+      "singles": {
+        "dsexp": 0.7172325581395349,
+        "haiku": 0.6861906976744186,
+        "gptnano": 0.7076465116279069
+      },
+      "best": "dsexp",
+      "ensemble": 0.7424558139534884,
+      "delta": 0.02522325581395346,
+      "ci": [
+        0.0025813953488371677,
+        0.04653953488372098
+      ],
+      "sig": "SIGNIFICANT"
+    },
+    "gpt": {
+      "singles": {
+        "dsexp": 0.7380593132154006,
+        "haiku": 0.6138982830385016,
+        "gptnano": 0.7163826742976067
+      },
+      "best": "dsexp",
+      "ensemble": 0.7340530697190427,
+      "delta": -0.00400624349635792,
+      "ci": [
+        -0.02691207075962543,
+        0.020642559833506713
+      ],
+      "sig": "n.s. (CI spans 0)"
+    }
+  },
+  "within_uniform": false,
+  "ensemble_uniform": false
+}

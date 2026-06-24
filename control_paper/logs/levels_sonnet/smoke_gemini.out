@@ -1,0 +1,79 @@
+=== gemini effort='none' | n=3 | model=openrouter/google/gemini-2.5-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/google/gemini-2.5-flash                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: none, fail_on_error:   
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                         0:00:29                                     
+openrouter/google/gemini-2.5-flash  29,323 tokens [I: 19,410, CW: 0, CR: 0, O:  
+                                  9,913, R: 0]                                  
+                                                                                
+sus_scorer_01                                                                   
+mean           0.917                                                            
+stderr         0.033                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-12-44-00-00_task_4xLoXnSx3AcsYZHFWtKYxt.eval                        
+                                                                                [06/24/26 03:13:13] WARNING  The 'score' field is deprecated.      logger.py:278
+                             Access sample scores through 'scores'              
+                             instead.                                           
+LEVELSUM {"model_tag": "gemini", "model": "openrouter/google/gemini-2.5-flash", "effort": "none", "n_scored": 3, "n_parsed": 3, "unparsed": 0, "mean": 0.917, "tok_in": 19410, "tok_out": 9913, "tok_reasoning": 0, "cost_usd": 0.0306, "elapsed_sec": 30.0, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-12-44-00-00_task_4xLoXnSx3AcsYZHFWtKYxt.eval"}
+=== gemini effort='low' | n=3 | model=openrouter/google/gemini-2.5-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/google/gemini-2.5-flash                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: low, fail_on_error:    
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                         0:00:32                                     
+openrouter/google/gemini-2.5-flash  38,471 tokens [I: 23,585, CW: 0, CR: 0, O:  
+                                  14,886, R: 2,789]                             
+                                                                                
+sus_scorer_01                                                                   
+mean           0.950                                                            
+stderr         0.029                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-13-18-00-00_task_oWSvEk83MXi6dog3TmJZY4.eval                        
+                                                                                LEVELSUM {"model_tag": "gemini", "model": "openrouter/google/gemini-2.5-flash", "effort": "low", "n_scored": 3, "n_parsed": 3, "unparsed": 0, "mean": 0.95, "tok_in": 23585, "tok_out": 14886, "tok_reasoning": 2789, "cost_usd": 0.0443, "elapsed_sec": 32.7, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-13-18-00-00_task_oWSvEk83MXi6dog3TmJZY4.eval"}
+=== gemini effort='medium' | n=3 | model=openrouter/google/gemini-2.5-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/google/gemini-2.5-flash                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: medium, fail_on_error: 
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                         0:00:29                                     
+openrouter/google/gemini-2.5-flash  31,256 tokens [I: 19,228, CW: 0, CR: 0, O:  
+                                  12,028, R: 6,088]                             
+                                                                                
+sus_scorer_01                                                                   
+mean           0.667                                                            
+stderr         0.333                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-13-55-00-00_task_NrxNFGd6qutGpu3ey8YRsT.eval                        
+                                                                                LEVELSUM {"model_tag": "gemini", "model": "openrouter/google/gemini-2.5-flash", "effort": "medium", "n_scored": 3, "n_parsed": 3, "unparsed": 0, "mean": 0.667, "tok_in": 19228, "tok_out": 12028, "tok_reasoning": 6088, "cost_usd": 0.0358, "elapsed_sec": 29.5, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-13-55-00-00_task_NrxNFGd6qutGpu3ey8YRsT.eval"}
+=== gemini effort='high' | n=3 | model=openrouter/google/gemini-2.5-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/google/gemini-2.5-flash                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: high, fail_on_error:   
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                         0:00:30                                     
+openrouter/google/gemini-2.5-flash  36,797 tokens [I: 18,921, CW: 0, CR: 0, O:  
+                                  17,876, R: 14,390]                            
+                                                                                
+sus_scorer_01                                                                   
+mean           0.867                                                            
+stderr         0.083                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-14-30-00-00_task_EbVQPPp2RD9MkhSvVyU8no.eval                        
+                                                                                LEVELSUM {"model_tag": "gemini", "model": "openrouter/google/gemini-2.5-flash", "effort": "high", "n_scored": 3, "n_parsed": 3, "unparsed": 0, "mean": 0.867, "tok_in": 18921, "tok_out": 17876, "tok_reasoning": 14390, "cost_usd": 0.0504, "elapsed_sec": 30.9, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-14-30-00-00_task_EbVQPPp2RD9MkhSvVyU8no.eval"}
