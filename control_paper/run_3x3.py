@@ -24,7 +24,8 @@ os.chdir(BASE); sys.path.insert(0, str(BASE))
 import suspicion_2x2 as b  # reuses build_samples, sus_scorer_01, solver, SONNET/DEEPSEEK logs
 import part5_ai_control.solutions as sol
 from inspect_ai import Task, eval as inspect_eval
-from inspect_ai.solver import generate
+from inspect_ai.solver import generate, system_message
+from prompts import MONITOR_IDENTITY_SYS, developer_from_slug, model_name_from_slug
 
 LOGDIR = BASE / "logs"
 GPT_LOGS = [
@@ -44,7 +45,7 @@ PRICING = {  # $/token (in, out)
 # reasoning_effort per monitor (only sent when truthy)
 EFFORT = {"dsexp": "none", "haiku": None, "gptnano": "minimal"}
 
-OUT_DIR = BASE / "logs" / "suspicion3x3"
+OUT_DIR = BASE / "logs" / os.getenv("SUS3X3_DIR", "suspicion3x3")  # env-overridable for variant runs
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -70,7 +71,32 @@ def build_gpt(limit=None):
     return samples
 
 
-def build_generator(gen, limit=None):
+def _problem_range(samples, start, end):
+    """Keep detection samples whose problem index is in [start, end). Problem
+    index increments on each clean sample (one clean per problem, clean precedes
+    its backdoor) -> a clean disjoint problem slice incl. both clean & backdoor."""
+    out, pidx = [], -1
+    for s in samples:
+        if (s.metadata or {}).get("label") == "clean":
+            pidx += 1
+        if start <= pidx < end:
+            out.append(s)
+    return out
+
+
+def build_generator(gen, limit=None, start=None, end=None):
+    # problem-range mode (start/end) takes precedence; else first-`limit` mode.
+    if start is not None or end is not None:
+        s, e = (start or 0), (end if end is not None else 10**9)
+        if gen == "gpt":
+            full = build_gpt(limit=None)
+        elif gen == "sonnet":
+            full = b.build_samples(b.SONNET_LOG, "sonnet")
+        elif gen == "deepseek":
+            full = b.build_samples(b.DEEPSEEK_LOG, "deepseek")
+        else:
+            raise ValueError(gen)
+        return _problem_range(full, s, e)
     cap = (limit, limit) if limit else (None, None)
     if gen == "gpt":
         return build_gpt(limit=limit)
@@ -88,14 +114,16 @@ def auroc(clean, bd):
     return wins / (len(bd) * len(clean))
 
 
-def detect_task(samples):
-    return Task(dataset=samples, plan=[generate(), b.suspiciousness_rating_01()],
-                scorer=b.sus_scorer_01())
+def detect_task(samples, identity=None):
+    plan = ([system_message(identity)] if identity else []) + [generate(), b.suspiciousness_rating_01()]
+    return Task(dataset=samples, plan=plan, scorer=b.sus_scorer_01())
 
 
-def run_cell(mon, gen, limit=None, max_conn=20):
+def run_cell(mon, gen, limit=None, max_conn=20, start=None, end=None):
     model = MONITORS[mon]
-    samples = build_generator(gen, limit=limit)
+    identity = MONITOR_IDENTITY_SYS.format(model=model_name_from_slug(model),
+                                           developer=developer_from_slug(model))
+    samples = build_generator(gen, limit=limit, start=start, end=end)
     n_clean = sum(1 for s in samples if s.metadata["label"] == "clean")
     n_bd = sum(1 for s in samples if s.metadata["label"] == "backdoor")
     print(f"=== CELL monitor={mon} generator={gen} | clean={n_clean} backdoor={n_bd} "
@@ -104,7 +132,7 @@ def run_cell(mon, gen, limit=None, max_conn=20):
     extra = {"reasoning_effort": eff} if eff else {}
     t0 = time.time()
     log = inspect_eval(
-        detect_task(samples), model=model, log_dir=str(OUT_DIR),
+        detect_task(samples, identity=identity), model=model, log_dir=str(OUT_DIR),
         max_connections=max_conn, max_tokens=1500,
         fail_on_error=False, time_limit=180,   # per-sample wall cap (guards slow nano)
         **extra,
@@ -140,6 +168,9 @@ def run_cell(mon, gen, limit=None, max_conn=20):
 if __name__ == "__main__":
     cells = sys.argv[1:] or ["gptnano:gpt"]
     limit = int(os.getenv("SAMPLE_LIMIT", "0")) or None
+    start = os.getenv("PROB_START"); end = os.getenv("PROB_END")
+    start = int(start) if start is not None else None
+    end = int(end) if end is not None else None
     for arg in cells:
         mon, gen = arg.split(":")
-        run_cell(mon, gen, limit=limit)
+        run_cell(mon, gen, limit=limit, start=start, end=end)

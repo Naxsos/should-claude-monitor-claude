@@ -1,0 +1,5 @@
+=== traj attack-detection | configs=['gemini:none', 'gemini:low', 'gemini:medium', 'gemini:high'] | trajectories=112 ===
+CONFIGSUM {"config": "gemini:none", "n": 112, "parsed": 111, "cost_usd": 0.921, "elapsed_sec": 83.9, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gemini_none.jsonl"}
+CONFIGSUM {"config": "gemini:low", "n": 112, "parsed": 107, "cost_usd": 1.593, "elapsed_sec": 237.2, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gemini_low.jsonl"}
+CONFIGSUM {"config": "gemini:medium", "n": 112, "parsed": 102, "cost_usd": 1.509, "elapsed_sec": 284.8, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gemini_medium.jsonl"}
+CONFIGSUM {"config": "gemini:high", "n": 112, "parsed": 110, "cost_usd": 1.559, "elapsed_sec": 203.4, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gemini_high.jsonl"}

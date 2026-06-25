@@ -1,0 +1,61 @@
+=== generation | 9 models x 100 problems = 900 jobs ===
+  [50/900] claude-sonnet-4.6 pid569 OK
+  [100/900] claude-sonnet-4.5 pid1828 OK
+  [150/900] claude-sonnet-4.6 pid1170 OK
+  [200/900] claude-haiku-4.5 pid912 OK
+  [250/900] claude-haiku-4.5 pid4729 OK
+  [300/900] gemini-3.5-flash pid2253 OK
+  [350/900] gemini-3.5-flash pid2962 OK
+  [400/900] gemini-3.5-flash pid1741 OK
+  [450/900] gemini-3-flash pid4522 OK
+  [500/900] gemini-3-flash pid2169 OK
+  [550/900] gemini-3.1-flash-lite pid4522 OK
+  [595/900] gemini-3.1-flash-lite pid2020 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [596/900] gemini-3.1-flash-lite pid4598 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [597/900] gpt-5.2 pid912 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [599/900] gpt-5.2 pid204 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [600/900] gpt-5.2 pid2253 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [601/900] gpt-5.2 pid2006 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [605/900] gpt-5.2 pid1828 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [606/900] gpt-5.2 pid1143 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [607/900] gpt-5.2 pid839 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [608/900] gpt-5.2 pid4467 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [609/900] gpt-5.2 pid712 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [610/900] gpt-5.2 pid4837 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [611/900] gpt-5.2 pid3456 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [612/900] gpt-5.2 pid260 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [613/900] gpt-5.2 pid767 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [614/900] gpt-5.2 pid244 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [615/900] gpt-5.2 pid1791 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [616/900] gpt-5.2 pid1905 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [617/900] gpt-5.2 pid4139 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [618/900] gpt-5.2 pid4931 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [619/900] gpt-5.2 pid217 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [620/900] gpt-5.2 pid4597 FAIL err:402:This request requires more credits, or fewer max_tokens. You requested up to 160
+  [621/900] gpt-5.2 pid1628 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [622/900] gpt-5.2 pid4464 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [623/900] gpt-5.2 pid3436 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [624/900] gpt-5.2 pid1805 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [625/900] gpt-5.2 pid3679 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [626/900] gpt-5.2 pid4827 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [627/900] gpt-5.2 pid2278 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [628/900] gpt-5.2 pid53 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [629/900] gpt-5.2 pid1307 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [630/900] gpt-5.2 pid3462 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [631/900] gpt-5.2 pid2787 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [632/900] gpt-5.2 pid2276 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [633/900] gpt-5.2 pid1273 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [634/900] gpt-5.2 pid1763 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [635/900] gpt-5.2 pid2757 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [636/900] gpt-5.2 pid837 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [637/900] gpt-5.2 pid759 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [638/900] gpt-5.2 pid3112 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [639/900] gpt-5.2 pid792 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [641/900] gpt-5.2 pid2940 FAIL err:402:Insufficient credits. Add more using https://openrouter.ai/settings/credits
+  [650/900] gpt-5.2 pid4729 OK
+  [700/900] gpt-5.4-nano pid912 OK
+  [750/900] gpt-5.4-nano pid1022 OK
+  [800/900] gpt-5-nano pid912 OK
+  [850/900] gpt-5-nano pid645 OK
+  [900/900] gpt-5-nano pid3758 OK
+wrote /root/ARENA_3.0/capestone/should-claude-monitor-claude/selfrec/solutions.jsonl (900 rows)

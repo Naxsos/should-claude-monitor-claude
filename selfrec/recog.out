@@ -1,0 +1,21 @@
+loaded 874 solutions | by family: { claude:275, gemini:299, gpt:300 }
+=== recognition | 9 judges x 200 = 1800 jobs ===
+  [100/1800] claude-sonnet-4.6 OK
+  [200/1800] claude-sonnet-4.6 OK
+  [300/1800] claude-sonnet-4.5 OK
+  [400/1800] claude-sonnet-4.5 OK
+  [500/1800] claude-haiku-4.5 OK
+  [600/1800] claude-haiku-4.5 OK
+  [700/1800] gemini-3.5-flash OK
+  [800/1800] gemini-3-flash OK
+  [900/1800] gemini-3-flash OK
+  [1000/1800] gemini-3.1-flash-lite OK
+  [1100/1800] gemini-3.1-flash-lite OK
+  [1200/1800] gpt-5.2 OK
+  [1300/1800] gpt-5.2 OK
+  [1400/1800] gpt-5.2 OK
+  [1500/1800] gpt-5.4-nano OK
+  [1600/1800] gpt-5.4-nano OK
+  [1700/1800] gpt-5-nano OK
+  [1800/1800] gpt-5-nano OK
+wrote /root/ARENA_3.0/capestone/should-claude-monitor-claude/selfrec/recognition.jsonl (1800 rows)

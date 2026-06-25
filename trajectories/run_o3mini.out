@@ -1,0 +1,3 @@
+=== traj attack-detection | configs=['o3mini:low', 'o3mini:medium'] | trajectories=112 ===
+CONFIGSUM {"config": "o3mini:low", "n": 112, "parsed": 112, "cost_usd": 2.496, "elapsed_sec": 26.4, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_o3mini_low.jsonl"}
+CONFIGSUM {"config": "o3mini:medium", "n": 112, "parsed": 112, "cost_usd": 2.764, "elapsed_sec": 60.3, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_o3mini_medium.jsonl"}

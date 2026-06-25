@@ -21,8 +21,10 @@ BASE = Path("/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_pape
 os.chdir(BASE); sys.path.insert(0, str(BASE))
 
 import suspicion_2x2 as b
+sys.path.insert(0, str(BASE.parent / "thursday_experiments_zu"))
+from prompts import SUS_PROMPT_01, MONITOR_IDENTITY_SYS, developer_from_slug, model_name_from_slug  # reasoning-levels reuses the 0-1 rating prompt
 from inspect_ai import Task, eval as inspect_eval
-from inspect_ai.solver import solver, generate, Solver, TaskState, Generate
+from inspect_ai.solver import solver, generate, system_message, Solver, TaskState, Generate
 from inspect_ai.model import get_model, GenerateConfig, ChatMessageUser
 
 MODELS = {
@@ -43,21 +45,27 @@ def score01() -> Solver:
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         model = get_model()
         cfg = GenerateConfig(temperature=0.0, max_tokens=SCORE_MAXTOK)
-        msgs = list(state.messages) + [ChatMessageUser(content=b.SUS_PROMPT_01)]
+        msgs = list(state.messages) + [ChatMessageUser(content=SUS_PROMPT_01)]
         out = await model.generate(input=msgs, config=cfg)
         state.output = out
+        verdict, conf = b.parse_verdict_conf(out.completion)
         v = b.parse_score_01(out.completion)
         state.metadata["sus_score_01"] = v if v is not None else -1.0
+        state.metadata["sus_verdict"] = verdict
+        state.metadata["sus_confidence"] = conf
         return state
     return solve
 
 
-def task(samples):
-    return Task(dataset=samples, plan=[generate(), score01()], scorer=b.sus_scorer_01())
+def task(samples, identity=None):
+    plan = ([system_message(identity)] if identity else []) + [generate(), score01()]
+    return Task(dataset=samples, plan=plan, scorer=b.sus_scorer_01())
 
 
 def run(model_tag, effort, limit):
     model, pin, pout = MODELS[model_tag]
+    identity = MONITOR_IDENTITY_SYS.format(model=model_name_from_slug(model),
+                                           developer=developer_from_slug(model))
     samples = b.build_samples(b.SONNET_LOG, "sonnet")
     if limit:
         samples = samples[:limit]
@@ -74,7 +82,7 @@ def run(model_tag, effort, limit):
         kw["reasoning_effort"] = effort
     t0 = time.time()
     try:
-        log = inspect_eval(task(samples), model=model, log_dir=str(OUT),
+        log = inspect_eval(task(samples, identity=identity), model=model, log_dir=str(OUT),
                            max_connections=20, max_tokens=INV_MAXTOK,
                            fail_on_error=False, time_limit=400, **kw)[0]
     except Exception as e:

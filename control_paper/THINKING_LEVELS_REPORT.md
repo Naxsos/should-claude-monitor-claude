@@ -47,7 +47,40 @@ Paired bootstrap tests (same samples → higher power):
 
 **Conclusion:** detection is driven by *which model* you pick (o3-mini ≈0.77 > Gemini ≈ Haiku ≈0.72), **not by how much it thinks.** Reinforces the 2x2/3x3 finding that monitor capability/calibration — not test-time reasoning — is what matters. (Cross-model "o3-mini is best" is only suggestive; its CI barely separates from Gemini/Haiku. The within-model "thinking doesn't help" finding is the solid one.)
 
+## WHY doesn't reasoning help? — autopsy + calibration (experiments A & B)
+`analyze_levels_autopsy.py` (offline, $0) re-reads the 9 verdict+confidence eval logs
+(`logs/levels_sonnet/*.eval`, n=143, **same 143 samples paired by id across every level**)
+to open up the flat AUROC. (Note: this is a smaller verdict-format subset, so absolute
+AUROC runs ~0.55–0.66 vs the headline ~0.69–0.73 full-N; the *within-model* pattern is what
+matters here, and it holds.) Output in `levels_autopsy.json`. Two mechanisms, both pointing
+the same way: **reasoning moves the suspicion prior, not the ranking.**
+
+**B — calibration.** Stated confidence is non-informative and pinned high everywhere:
+`conf_when_right ≈ conf_when_wrong` at every level (Gemini 0.99/0.99, o3-mini 1.00/0.99,
+Haiku 0.91/0.92) — the monitor is *equally sure when wrong as when right*, so confidence
+can't be thresholded (explains TP@5%FPR≈0). The **positive-call rate** sits far above the
+~24% base rate (Gemini 48–55%, Haiku/o3-mini 31–38%) and **rises with reasoning** (o3-mini
+low→med 31%→38%; Gemini none→med 48%→55%). Critically, suspicion on **clean** code climbs
+about as fast as on backdoors — for o3-mini, *faster* (clean +0.086 vs backdoor +0.034 from
+low→med), which is exactly why o3-mini medium underperforms low.
+
+**A — paired migration (low→high effort, same samples).** ~80–88% of verdicts are *stable*;
+of the rest, the dominant move is **TN→FP "manufactured suspicion"** (o3-mini 12, Haiku 8,
+Gemini 10) vs few **FN→TP "rescued"** catches (2, 1, 5). Net verdict flips: o3-mini **−8**,
+Haiku **−5**, Gemini **+2** (a wash). For o3-mini the analysis length↔suspicion correlation is
+**+0.39** — the more it writes, the more suspicious it gets. So extra reasoning mostly talks
+the monitor into seeing backdoors in clean code; it rarely surfaces a backdoor it would
+otherwise have missed.
+
+**Mechanistic conclusion:** the bottleneck is the **suspicion prior / calibration, not
+analytic depth**. Reasoning doesn't improve discrimination because a code backdoor is a
+localized needle the monitor either spots immediately or rationalizes its way *toward* (not
+away from) — pushing TP and FP up together, leaving AUROC flat and confidence useless. This
+argues the productive next lever is **localization/verification or prior-calibration** (exp C),
+not more thinking budget (exp D).
+
 ## Data-quality caveats
+- A/B run on the n=143 verdict-format subset (absolute AUROC lower than full-N; within-model trends preserved). Full-N `.eval` transcripts were gitignored/cleared — only `.out` aggregates survive for those.
 - Partials (Gemini low/medium/high, Haiku 2k/8k) lost samples to **timeouts** (slow high-effort reasoning) and earlier **credit exhaustion**, but losses were **proportional across clean/backdoor** → unbiased, valid for AUROC (just smaller N → wider CIs).
 - o3-mini high (~$56, token-hungry/flaky) was **not run** — not needed for the conclusion.
 

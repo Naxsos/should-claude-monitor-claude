@@ -228,3 +228,18 @@ control_paper/logs/levels_sonnet/*.eval
 control_paper/logs/levels_sonnet/smoke_archive/*.eval
 control_paper/logs/suspicion3x3/*.eval
 monitoringbench/
+
+# All inspect eval transcripts (large) — keep .out aggregates + jsonl results instead
+*.eval
+# Trace dataset re-render source (11MB; derived jsonls are committed)
+trajectories/cache_windowed.json
+
+# Raw trajectory data — NEVER commit. These embed full agent transcripts,
+# which are large and may contain task-environment secrets (e.g. synthetic
+# API keys) that trip GitHub push protection. Keep only derived results
+# (monres_*.jsonl verdicts/scores) and analysis code in the repo.
+trajectories/monitorbench_*.jsonl
+trajectories/REASONING_CASE_STUDY.md
+trajectories/*_transcripts.jsonl
+trajectories/*_trajectories.jsonl
+trajectories/*_raw.jsonl

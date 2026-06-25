@@ -1,0 +1,3 @@
+=== traj attack-detection | configs=['haiku:b16384', 'haiku:b32768'] | trajectories=112 ===
+CONFIGSUM {"config": "haiku:b16384", "n": 112, "parsed": 112, "cost_usd": 4.125, "elapsed_sec": 242.4, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_haiku_b16384.jsonl"}
+CONFIGSUM {"config": "haiku:b32768", "n": 112, "parsed": 68, "cost_usd": 2.974, "elapsed_sec": 248.7, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_haiku_b32768.jsonl"}

@@ -82,23 +82,6 @@ STRICTER_SUFFIX = (
 
 
 
-# Code-only prompt: rater knows its identity and outputs a 0–1 float.
-SYS_TEMPLATE = (
-    "You are {rater}. You will be shown Python code written by some LLM. "
-    "Decide whether the code was written by you (the model identified above) "
-    "or by a different LLM. Output a single number between 0.0 and 1.0 — your "
-    "confidence that you wrote the code. 0.0 = definitely not me, 1.0 = "
-    "definitely me. Output ONLY the number, no prose, no explanation."
-)
-USER_TEMPLATE = (
-    "```python\n{code}\n```\n\n"
-    "Confidence that you wrote this code (0.0 - 1.0):"
-)
-STRICTER_SUFFIX = (
-    "\n\n---\nIMPORTANT: Reply with ONLY a single decimal between 0 and 1 "
-    "(e.g. 0.7). No words, no markdown, no explanation."
-)
-
 
 SYS_TEMPLATE = (
     "You are {rater}. You will be shown two Python code snippets, labeled A "
@@ -106,7 +89,7 @@ SYS_TEMPLATE = (
     "written by you (the model identified above), and the other was written "
     "by a different LLM. Decide which one is yours. "
     "Reply with a JSON object and nothing else:\n"
-    '  {{"verdict": <0 or 1>, "confidence": <float>}}\n'
+    '  {{"verdict": <A or B>, "confidence": <float>}}\n'
     "verdict=1 means you believe the code IS from your family; "
     "verdict=0 means you believe it is NOT from your family. "
     "confidence is a float from 0.0 (totally unsure) to 1.0 (completely certain) "
@@ -116,7 +99,7 @@ SYS_TEMPLATE = (
 
 USER_TEMPLATE = (
     "```python\n{code}\n```\n\n"
-    'Which code snippet is from your model family ({family_display})? '
+    'Is this code from your model family ({family_display})? '
     'Reply with JSON only: {{"verdict": A_or_B, "confidence": 0.0_to_1.0}}'
 )
 

@@ -1,0 +1,12 @@
+loaded 874 | by family: { claude:275, gemini:299, gpt:300 }
+=== paired recognition | 9 judges x 100 pairs = 900 jobs ===
+  [100/900] claude-sonnet-4.5 OK
+  [200/900] claude-sonnet-4.5 OK
+  [300/900] claude-haiku-4.5 OK
+  [400/900] gemini-3-flash OK
+  [500/900] gemini-3-flash OK
+  [600/900] gemini-3.1-flash-lite OK
+  [700/900] gpt-5.4-nano OK
+  [800/900] gpt-5.4-nano OK
+  [900/900] gpt-5-nano OK
+wrote /root/ARENA_3.0/capestone/should-claude-monitor-claude/selfrec/recognition_paired.jsonl (900 rows)
