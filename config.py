@@ -116,7 +116,7 @@ SYS_TEMPLATE = (
 
 USER_TEMPLATE = (
     "```python\n{code}\n```\n\n"
-    'Is this code from your model family ({family_display})? '
+    'Which code snippet is from your model family ({family_display})? '
     'Reply with JSON only: {{"verdict": A_or_B, "confidence": 0.0_to_1.0}}'
 )
 
