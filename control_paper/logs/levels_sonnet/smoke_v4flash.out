@@ -1,0 +1,41 @@
+=== deepseek effort='high' | n=3 | model=openrouter/deepseek/deepseek-v4-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/deepseek/deepseek-v4-flash                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: high, fail_on_error:   
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                            0:06:40                                  
+openrouter/deepseek/deepseek-v4-flash  20,125 tokens [I: 11,217, CW: 0, CR: 128,
+                                     O: 8,780, R: 7,653]                        
+                                                                                
+sus_scorer_01                                                                   
+mean           0.317                                                            
+stderr         0.658                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-35-44-00-00_task_QVn28AYGkKXAxuxpDxaeZp.eval                        
+                                                                                [06/24/26 03:42:24] WARNING  The 'score' field is deprecated.      logger.py:278
+                             Access sample scores through 'scores'              
+                             instead.                                           
+LEVELSUM {"model_tag": "deepseek", "model": "openrouter/deepseek/deepseek-v4-flash", "effort": "high", "n_scored": 3, "n_parsed": 2, "unparsed": 1, "mean": 0.975, "tok_in": 11217, "tok_out": 8780, "tok_reasoning": 7653, "cost_usd": 0.0026, "elapsed_sec": 401.2, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-35-44-00-00_task_QVn28AYGkKXAxuxpDxaeZp.eval"}
+=== deepseek effort='xhigh' | n=3 | model=openrouter/deepseek/deepseek-v4-flash ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (3 samples): openrouter/deepseek/deepseek-v4-flash                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 6000, reasoning_effort: xhigh, fail_on_error:  
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                            0:06:40                                  
+openrouter/deepseek/deepseek-v4-flash  51,060 tokens [I: 3,678, CW: 0, CR:      
+                                     2,393, O: 44,989, R: 44,750]               
+                                                                                
+sus_scorer_01                                                                   
+mean           -0.667                                                           
+stderr         0.333                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T02-42-29-00-00_task_aiBBtje7Q8fxUEDxmVHLcx.eval                        
+                                                                                LEVELSUM {"model_tag": "deepseek", "model": "openrouter/deepseek/deepseek-v4-flash", "effort": "xhigh", "n_scored": 3, "n_parsed": 1, "unparsed": 2, "mean": 0.0, "tok_in": 3678, "tok_out": 44989, "tok_reasoning": 44750, "cost_usd": 0.0084, "elapsed_sec": 400.3, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T02-42-29-00-00_task_aiBBtje7Q8fxUEDxmVHLcx.eval"}

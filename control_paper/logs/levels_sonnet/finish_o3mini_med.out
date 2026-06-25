@@ -1,0 +1,22 @@
+=== o3mini effort='medium' | n=715 | model=openrouter/openai/o3-mini ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (715 samples): openrouter/openai/o3-mini                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 18000, reasoning_effort: medium, fail_on_error:
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                0:11:31                                              
+openrouter/openai/o3-mini  5,348,787 tokens [I: 1,839,619, CW: 0, CR: 153,984,  
+                         O: 3,355,184, R: 1,369,024]                            
+                                                                                
+sus_scorer_01                                                                   
+mean           0.441                                                            
+stderr         0.018                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-24T12-27-20-00-00_task_PfYM2V6MTXBcNHbhdL5qwM.eval                        
+                                                                                [06/24/26 13:38:54] WARNING  The 'score' field is deprecated.      logger.py:278
+                             Access sample scores through 'scores'              
+                             instead.                                           
+LEVELSUM {"model_tag": "o3mini", "model": "openrouter/openai/o3-mini", "effort": "medium", "n_scored": 715, "n_parsed": 715, "unparsed": 0, "mean": 0.441, "tok_in": 1839619, "tok_out": 3355184, "tok_reasoning": 1369024, "cost_usd": 16.7864, "elapsed_sec": 691.9, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-24T12-27-20-00-00_task_PfYM2V6MTXBcNHbhdL5qwM.eval"}

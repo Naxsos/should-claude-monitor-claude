@@ -222,3 +222,9 @@ control_paper/logs/suspicion2x2/*.eval
 control_paper/logs/suspicion2x2/validation_archive/
 control_paper/logs/suspicion2x2_multi/*.eval
 arXiv-2312.06942v5.tar.gz
+
+# Session: thinking-levels + 3x3 raw eval transcripts (large) and downloaded benchmark
+control_paper/logs/levels_sonnet/*.eval
+control_paper/logs/levels_sonnet/smoke_archive/*.eval
+control_paper/logs/suspicion3x3/*.eval
+monitoringbench/
