@@ -108,8 +108,15 @@ AUROC. Question: does giving the monitor more test-time reasoning improve detect
 Paired test: only significant effect is **o3-mini low−medium = +0.047** (thinking *hurt*);
 Gemini and Haiku are flat within noise.
 
-**Outcome.** More reasoning does **not** improve backdoor detection — and significantly
-*degrades* o3-mini.
+**GPT-5.2 (added later — same trajectory model, on the 143-sample verdict+confidence subset).**
+Reasoning is flat here too: low **0.575** / medium **0.608** / high **0.568**. On this
+comparable subset (where every monitor scores below its 715-headline) GPT-5.2 sits **right
+with peers** — Haiku 0.623, Gemini 0.617, o3-mini 0.571 — so its strong-ish *trajectory*
+detection does **not** translate into better *backdoor* detection; it's just one of the pack,
+and adding effort doesn't help. (xhigh repeatedly credit-died at n=18 and is not reported.)
+
+**Outcome.** More reasoning does **not** improve backdoor detection — confirmed across **four
+models** (Gemini, Haiku, o3-mini, GPT-5.2) — and significantly *degrades* o3-mini.
 
 **Discussion (autopsy, [S4]).** Reasoning moves the **suspicion prior, not the ranking**.
 Across paired low→high effort, the dominant verdict change is **TN→FP "manufactured
@@ -294,7 +301,10 @@ Additional smaller runs supporting the above. Code/data live in this repo.
   failures are a *capability floor*. GPT-5.2 over-flags (~100% positive verdicts; the confidence
   gradient carries the AUROC) and at xhigh needed `max_tokens`≈36K+ or it truncates the verdict
   on the longest (honest) traces — 8 such dropouts were recovered by re-running with a 48K budget.
-  Data: `trajectories/monres_gpt*.jsonl`. *(GPT-5.2 as a backdoor monitor [Exp 3] is in progress.)*
+  Data: `trajectories/monres_gpt*.jsonl`. **GPT-5.2 cross-task summary:** detects trajectories
+  (residualized 0.64→0.69 across low→xhigh) but is only peer-level on backdoors (0.57–0.61,
+  flat — see Exp 3) — its edge is multi-step integration, not localized needles. Backdoor logs:
+  `control_paper/logs/levels_sonnet/` (model gpt-5.2); xhigh incomplete (credit-limited, n=18).
 - **[S7] Length/composition confound baseline.** Trivial classifier on {tokens, asst chars,
   tool chars, #tool_calls} scores 0.70 (prose) / 0.62 (action-only); honest=1.25× tool
   calls of attack. Motivates the residualized/incremental analysis. Code:
