@@ -1,0 +1,181 @@
+{
+  "n_judges": 9,
+  "recognition_metric": "AUROC (own-family vs other-family score), gap = mean_own - mean_other",
+  "per_judge": [
+    {
+      "judge": "claude-sonnet-4.6",
+      "auroc": 0.50425,
+      "gap": -0.000200000000000089,
+      "Global": 75.32,
+      "Reasoning": 86.38,
+      "Coding": 79.98,
+      "Agentic": 56.67,
+      "Math": 86.53,
+      "Data": 76.06,
+      "Language": 77.69,
+      "IF": 63.92
+    },
+    {
+      "judge": "gemini-3.5-flash",
+      "auroc": 0.5431588613406795,
+      "gap": -0.023838383838383437,
+      "Global": 75.02,
+      "Reasoning": 82.0,
+      "Coding": 78.18,
+      "Agentic": 51.67,
+      "Math": 88.24,
+      "Data": 64.86,
+      "Language": 84.58,
+      "IF": 75.6
+    },
+    {
+      "judge": "gpt-5.2",
+      "auroc": 0.6074,
+      "gap": 0.026600000000000068,
+      "Global": 48.91,
+      "Reasoning": 42.8,
+      "Coding": 76.45,
+      "Agentic": 40.0,
+      "Math": 58.25,
+      "Data": 47.68,
+      "Language": 49.97,
+      "IF": 27.2
+    },
+    {
+      "judge": "claude-sonnet-4.5",
+      "auroc": 0.48665,
+      "gap": -0.043619999999999715,
+      "Global": 53.69,
+      "Reasoning": 42.29,
+      "Coding": 76.07,
+      "Agentic": 48.33,
+      "Math": 62.62,
+      "Data": 47.0,
+      "Language": 76.0,
+      "IF": 23.52
+    },
+    {
+      "judge": "gemini-3-flash",
+      "auroc": 0.5527272727272727,
+      "gap": 0.019272727272727774,
+      "Global": 72.4,
+      "Reasoning": 74.55,
+      "Coding": 73.9,
+      "Agentic": 40.0,
+      "Math": 84.17,
+      "Data": 74.77,
+      "Language": 84.56,
+      "IF": 74.86
+    },
+    {
+      "judge": "claude-haiku-4.5",
+      "auroc": 0.5312,
+      "gap": -0.0004999999999999449,
+      "Global": 45.33,
+      "Reasoning": 33.94,
+      "Coding": 72.17,
+      "Agentic": 33.33,
+      "Math": 57.97,
+      "Data": 45.13,
+      "Language": 57.05,
+      "IF": 17.75
+    },
+    {
+      "judge": "gpt-5.4-nano",
+      "auroc": 0.62285,
+      "gap": 0.04807000000000006,
+      "Global": 48.67,
+      "Reasoning": 42.13,
+      "Coding": 69.4,
+      "Agentic": 37.28,
+      "Math": 65.16,
+      "Data": 43.97,
+      "Language": 45.56,
+      "IF": 37.18
+    },
+    {
+      "judge": "gemini-3.1-flash-lite",
+      "auroc": 0.5845454545454546,
+      "gap": 0.038181818181818206,
+      "Global": 61.68,
+      "Reasoning": 59.66,
+      "Coding": 68.52,
+      "Agentic": 33.33,
+      "Math": 73.56,
+      "Data": 54.9,
+      "Language": 73.18,
+      "IF": 68.62
+    },
+    {
+      "judge": "gpt-5-nano",
+      "auroc": 0.5216,
+      "gap": 0.01658000000000004,
+      "Global": 34.34,
+      "Reasoning": 27.68,
+      "Coding": 52.73,
+      "Agentic": 10.0,
+      "Math": 48.91,
+      "Data": 36.57,
+      "Language": 35.4,
+      "IF": 29.1
+    }
+  ],
+  "correlations": [
+    {
+      "dim": "Global",
+      "auroc_pearson": -0.13984873182691532,
+      "auroc_spearman": -0.13333333333333333,
+      "gap_pearson": -0.2388852554493272,
+      "gap_spearman": -0.2
+    },
+    {
+      "dim": "Reasoning",
+      "auroc_pearson": -0.1323976072435126,
+      "auroc_spearman": -0.016666666666666666,
+      "gap_pearson": -0.17543770383984975,
+      "gap_spearman": -0.1
+    },
+    {
+      "dim": "Coding",
+      "auroc_pearson": -0.056288663977140226,
+      "auroc_spearman": -0.25,
+      "gap_pearson": -0.38882611555848245,
+      "gap_spearman": -0.4666666666666667
+    },
+    {
+      "dim": "Agentic",
+      "auroc_pearson": -0.162846000617941,
+      "auroc_spearman": -0.2773207162492859,
+      "gap_pearson": -0.4531358580564552,
+      "gap_spearman": -0.4369902195443293
+    },
+    {
+      "dim": "Math",
+      "auroc_pearson": -0.0856953759710706,
+      "auroc_spearman": 0.06666666666666667,
+      "gap_pearson": -0.16618945087056897,
+      "gap_spearman": -0.06666666666666667
+    },
+    {
+      "dim": "Data",
+      "auroc_pearson": -0.18815452660771095,
+      "auroc_spearman": -0.08333333333333333,
+      "gap_pearson": -0.15119003665005193,
+      "gap_spearman": -0.13333333333333333
+    },
+    {
+      "dim": "Language",
+      "auroc_pearson": -0.3504761326751223,
+      "auroc_spearman": -0.26666666666666666,
+      "gap_pearson": -0.48474322548859744,
+      "gap_spearman": -0.48333333333333334
+    },
+    {
+      "dim": "IF",
+      "auroc_pearson": 0.06219680872786881,
+      "auroc_spearman": 0.26666666666666666,
+      "gap_pearson": 0.08351510950575579,
+      "gap_spearman": 0.2
+    }
+  ]
+}

@@ -1,0 +1,1308 @@
+=== gpt52 effort='low' | n=143 | model=openrouter/openai/gpt-5.2 ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (143 samples): openrouter/openai/gpt-5.2                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 30000, reasoning_effort: low, fail_on_error:   
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                0:05:35                                              
+openrouter/openai/gpt-5.2  735,338 tokens [I: 416,448, CW: 0, CR: 57,088, O:    
+                         261,802, R: 116,059]                                   
+                                                                                
+sus_scorer_01                                                                   
+mean           0.824                                                            
+stderr         0.026                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-26T00-36-41-00-00_task_aKXTt48dZtLQN6WiHPVsL4.eval                        
+                                                                                [06/26/26 01:42:16] WARNING  The 'score' field is deprecated.      logger.py:278
+                             Access sample scores through 'scores'              
+                             instead.                                           
+LEVELSUM {"model_tag": "gpt52", "model": "openrouter/openai/gpt-5.2", "effort": "low", "n_scored": 143, "n_parsed": 143, "unparsed": 0, "mean": 0.824, "tok_in": 416448, "tok_out": 261802, "tok_reasoning": 116059, "cost_usd": 4.394, "elapsed_sec": 334.8, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-26T00-36-41-00-00_task_aKXTt48dZtLQN6WiHPVsL4.eval"}
+=== gpt52 effort='medium' | n=143 | model=openrouter/openai/gpt-5.2 ===
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (143 samples): openrouter/openai/gpt-5.2                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 30000, reasoning_effort: medium, fail_on_error:
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                0:10:12                                              
+openrouter/openai/gpt-5.2  961,132 tokens [I: 399,437, CW: 0, CR: 72,704, O:    
+                         488,991, R: 344,580]                                   
+                                                                                
+sus_scorer_01                                                                   
+mean           0.799                                                            
+stderr         0.027                                                            
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-26T00-42-21-00-00_task_5jEDNCnzhWDTsiBZ9Jyn6i.eval                        
+                                                                                LEVELSUM {"model_tag": "gpt52", "model": "openrouter/openai/gpt-5.2", "effort": "medium", "n_scored": 143, "n_parsed": 143, "unparsed": 0, "mean": 0.799, "tok_in": 399437, "tok_out": 488991, "tok_reasoning": 344580, "cost_usd": 7.5449, "elapsed_sec": 612.9, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-26T00-42-21-00-00_task_5jEDNCnzhWDTsiBZ9Jyn6i.eval"}
+=== gpt52 effort='high' | n=143 | model=openrouter/openai/gpt-5.2 ===
+[06/26/26 01:59:21] WARNING  sample=110                              run.py:1128
+                             Sample error (id: 110, epoch: 1): Error            
+                             code: 402 - {'error': {'message': 'This            
+                             request requires more credits, or fewer            
+                             max_tokens. You requested up to 30000              
+                             tokens, but can only afford 441. To                
+                             increase, visit                                    
+                             https://openrouter.ai/settings/credits             
+                             and add more credits', 'code': 402,                
+                             'metadata': {'provider_name': None,                
+                             'previous_errors': [{'code': 402,                  
+                             'message': 'This request requires more             
+                             credits, or fewer max_tokens. You                  
+                             requested up to 30000 tokens, but can              
+                             only afford 441. To increase, visit                
+                             https://openrouter.ai/settings/credits             
+                             and add more credits'}]}}, 'user_id':              
+                             'user_2ruLfrbw9lHz83uyDXo5E2A7XwR'})               
+[06/26/26 01:59:22] WARNING  sample=93                               run.py:1128
+                             Sample error (id: 93, epoch: 1): Error             
+                             code: 402 - {'error': {'message': 'This            
+                             request requires more credits, or fewer            
+                             max_tokens. You requested up to 4000               
+                             tokens, but can only afford 441. To                
+                             increase, visit                                    
+                             https://openrouter.ai/settings/credits             
+                             and add more credits', 'code': 402,                
+                             'metadata': {'provider_name': None,                
+                             'previous_errors': [{'code': 402,                  
+                             'message': 'This request requires more             
+                             credits, or fewer max_tokens. You                  
+                             requested up to 4000 tokens, but can               
+                             only afford 441. To increase, visit                
+                             https://openrouter.ai/settings/credits             
+                             and add more credits'}]}}, 'user_id':              
+                             'user_2ruLfrbw9lHz83uyDXo5E2A7XwR'})               
+[06/26/26 01:59:23] WARNING  sample=113                              run.py:1128
+                             Sample error (id: 113, epoch: 1): Error            
+                             code: 402 - {'error': {'message': 'This            
+                             request requires more credits, or fewer            
+                             max_tokens. You requested up to 30000              
+                             tokens, but can only afford 441. To                
+                             increase, visit                                    
+                             https://openrouter.ai/settings/credits             
+                             and add more credits', 'code': 402,                
+                             'metadata': {'provider_name': None,                
+                             'previous_errors': [{'code': 402,                  
+                             'message': 'This request requires more             
+                             credits, or fewer max_tokens. You                  
+                             requested up to 30000 tokens, but can              
+                             only afford 441. To increase, visit                
+                             https://openrouter.ai/settings/credits             
+                             and add more credits'}]}}, 'user_id':              
+                             'user_2ruLfrbw9lHz83uyDXo5E2A7XwR'})               
+[06/26/26 01:59:24] WARNING  sample=112                              run.py:1128
+                             Sample error (id: 112, epoch: 1): Error            
+                             code: 402 - {'error': {'message': 'This            
+                             request requires more credits, or fewer            
+                             max_tokens. You requested up to 30000              
+                             tokens, but can only afford 441. To                
+                             increase, visit                                    
+                             https://openrouter.ai/settings/credits             
+                             and add more credits', 'code': 402,                
+                             'metadata': {'provider_name': None,                
+                             'previous_errors': [{'code': 402,                  
+                             'message': 'This request requires more             
+                             credits, or fewer max_tokens. You                  
+                             requested up to 30000 tokens, but can              
+                             only afford 441. To increase, visit                
+                             https://openrouter.ai/settings/credits             
+                             and add more credits'}]}}, 'user_id':              
+                             'user_2ruLfrbw9lHz83uyDXo5E2A7XwR'})               
+[06/26/26 01:59:25] WARNING  sample=111                              run.py:1128
+                             Sample error (id: 111, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:26] WARNING  sample=85                               run.py:1128
+                             Sample error (id: 85, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:27] WARNING  sample=107                              run.py:1128
+                             Sample error (id: 107, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:28] WARNING  sample=114                              run.py:1128
+                             Sample error (id: 114, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=115                              run.py:1128
+                             Sample error (id: 115, epoch: 1): Error            
+                             code: 402 - {'error': {'message': 'This            
+                             request requires more credits, or fewer            
+                             max_tokens. You requested up to 30000              
+                             tokens, but can only afford 441. To                
+                             increase, visit                                    
+                             https://openrouter.ai/settings/credits             
+                             and add more credits', 'code': 402,                
+                             'metadata': {'provider_name': None,                
+                             'previous_errors': [{'code': 402,                  
+                             'message': 'This request requires more             
+                             credits, or fewer max_tokens. You                  
+                             requested up to 30000 tokens, but can              
+                             only afford 441. To increase, visit                
+                             https://openrouter.ai/settings/credits             
+                             and add more credits'}]}}, 'user_id':              
+                             'user_2ruLfrbw9lHz83uyDXo5E2A7XwR'})               
+[06/26/26 01:59:29] WARNING  sample=116                              run.py:1128
+                             Sample error (id: 116, epoch: 1): Error            
+                             code: 402 - {'error': {'message': 'This            
+                             request requires more credits, or fewer            
+                             max_tokens. You requested up to 30000              
+                             tokens, but can only afford 441. To                
+                             increase, visit                                    
+                             https://openrouter.ai/settings/credits             
+                             and add more credits', 'code': 402,                
+                             'metadata': {'provider_name': None,                
+                             'previous_errors': [{'code': 402,                  
+                             'message': 'This request requires more             
+                             credits, or fewer max_tokens. You                  
+                             requested up to 30000 tokens, but can              
+                             only afford 441. To increase, visit                
+                             https://openrouter.ai/settings/credits             
+                             and add more credits'}]}}, 'user_id':              
+                             'user_2ruLfrbw9lHz83uyDXo5E2A7XwR'})               
+                    WARNING  sample=104                              run.py:1128
+                             Sample error (id: 104, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:31] WARNING  sample=105                              run.py:1128
+                             Sample error (id: 105, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:32] WARNING  sample=117                              run.py:1128
+                             Sample error (id: 117, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=118                              run.py:1128
+                             Sample error (id: 118, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:33] WARNING  sample=119                              run.py:1128
+                             Sample error (id: 119, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:34] WARNING  sample=120                              run.py:1128
+                             Sample error (id: 120, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:35] WARNING  sample=121                              run.py:1128
+                             Sample error (id: 121, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:36] WARNING  sample=122                              run.py:1128
+                             Sample error (id: 122, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:37] WARNING  sample=123                              run.py:1128
+                             Sample error (id: 123, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:38] WARNING  sample=76                               run.py:1128
+                             Sample error (id: 76, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=124                              run.py:1128
+                             Sample error (id: 124, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:39] WARNING  sample=125                              run.py:1128
+                             Sample error (id: 125, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:40] WARNING  sample=128                              run.py:1128
+                             Sample error (id: 128, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:41] WARNING  sample=127                              run.py:1128
+                             Sample error (id: 127, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:42] WARNING  sample=126                              run.py:1128
+                             Sample error (id: 126, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:43] WARNING  sample=129                              run.py:1128
+                             Sample error (id: 129, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:44] WARNING  sample=84                               run.py:1128
+                             Sample error (id: 84, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=103                              run.py:1128
+                             Sample error (id: 103, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:45] WARNING  sample=132                              run.py:1128
+                             Sample error (id: 132, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:47] WARNING  sample=131                              run.py:1128
+                             Sample error (id: 131, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=109                              run.py:1128
+                             Sample error (id: 109, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:48] WARNING  sample=134                              run.py:1128
+                             Sample error (id: 134, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:49] WARNING  sample=133                              run.py:1128
+                             Sample error (id: 133, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=130                              run.py:1128
+                             Sample error (id: 130, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:51] WARNING  sample=135                              run.py:1128
+                             Sample error (id: 135, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=136                              run.py:1128
+                             Sample error (id: 136, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:52] WARNING  sample=137                              run.py:1128
+                             Sample error (id: 137, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:54] WARNING  sample=138                              run.py:1128
+                             Sample error (id: 138, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=140                              run.py:1128
+                             Sample error (id: 140, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:55] WARNING  sample=143                              run.py:1128
+                             Sample error (id: 143, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:56] WARNING  sample=139                              run.py:1128
+                             Sample error (id: 139, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:57] WARNING  sample=141                              run.py:1128
+                             Sample error (id: 141, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:58] WARNING  sample=102                              run.py:1128
+                             Sample error (id: 102, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 01:59:59] WARNING  sample=95                               run.py:1128
+                             Sample error (id: 95, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=142                              run.py:1128
+                             Sample error (id: 142, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:00:01] WARNING  sample=106                              run.py:1128
+                             Sample error (id: 106, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=92                               run.py:1128
+                             Sample error (id: 92, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:00:03] WARNING  sample=94                               run.py:1128
+                             Sample error (id: 94, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:00:28] WARNING  sample=108                              run.py:1128
+                             Sample error (id: 108, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:00:38] WARNING  sample=99                               run.py:1128
+                             Sample error (id: 99, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (143 samples): openrouter/openai/gpt-5.2                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 30000, reasoning_effort: high, fail_on_error:  
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                0:12:23                                              
+openrouter/openai/gpt-5.2  846,183 tokens [I: 272,692, CW: 0, CR: 49,536, O:    
+                         523,955, R: 415,506]                                   
+                                                                                
+sus_scorer_01                                                                   
+mean           0.685                                                            
+stderr         0.045                                                            
+                                                                                
+WARNING: 50 of 143 executed samples (34%) had errors and were not scored.       
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-26T00-52-39-00-00_task_fDxqRuxU6ukzkEKmUfo694.eval                        
+                                                                                LEVELSUM {"model_tag": "gpt52", "model": "openrouter/openai/gpt-5.2", "effort": "high", "n_scored": 93, "n_parsed": 92, "unparsed": 1, "mean": 0.703, "tok_in": 272692, "tok_out": 523955, "tok_reasoning": 415506, "cost_usd": 7.8126, "elapsed_sec": 744.2, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-26T00-52-39-00-00_task_fDxqRuxU6ukzkEKmUfo694.eval"}
+=== gpt52 effort='xhigh' | n=143 | model=openrouter/openai/gpt-5.2 ===
+[06/26/26 02:05:15] WARNING  sample=5                                run.py:1128
+                             Sample error (id: 5, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:17] WARNING  sample=20                               run.py:1128
+                             Sample error (id: 20, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=19                               run.py:1128
+                             Sample error (id: 19, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=2                                run.py:1128
+                             Sample error (id: 2, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:18] WARNING  sample=6                                run.py:1128
+                             Sample error (id: 6, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=11                               run.py:1128
+                             Sample error (id: 11, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=4                                run.py:1128
+                             Sample error (id: 4, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:19] WARNING  sample=17                               run.py:1128
+                             Sample error (id: 17, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:20] WARNING  sample=15                               run.py:1128
+                             Sample error (id: 15, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=10                               run.py:1128
+                             Sample error (id: 10, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:21] WARNING  sample=9                                run.py:1128
+                             Sample error (id: 9, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=14                               run.py:1128
+                             Sample error (id: 14, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=18                               run.py:1128
+                             Sample error (id: 18, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:22] WARNING  sample=8                                run.py:1128
+                             Sample error (id: 8, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=12                               run.py:1128
+                             Sample error (id: 12, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=16                               run.py:1128
+                             Sample error (id: 16, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:23] WARNING  sample=3                                run.py:1128
+                             Sample error (id: 3, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:24] WARNING  sample=1                                run.py:1128
+                             Sample error (id: 1, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=13                               run.py:1128
+                             Sample error (id: 13, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:25] WARNING  sample=7                                run.py:1128
+                             Sample error (id: 7, epoch: 1): Error              
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:27] WARNING  sample=22                               run.py:1128
+                             Sample error (id: 22, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:28] WARNING  sample=24                               run.py:1128
+                             Sample error (id: 24, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=26                               run.py:1128
+                             Sample error (id: 26, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:29] WARNING  sample=25                               run.py:1128
+                             Sample error (id: 25, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=23                               run.py:1128
+                             Sample error (id: 23, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:32] WARNING  sample=29                               run.py:1128
+                             Sample error (id: 29, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=28                               run.py:1128
+                             Sample error (id: 28, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=27                               run.py:1128
+                             Sample error (id: 27, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:33] WARNING  sample=21                               run.py:1128
+                             Sample error (id: 21, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=33                               run.py:1128
+                             Sample error (id: 33, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:34] WARNING  sample=36                               run.py:1128
+                             Sample error (id: 36, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:36] WARNING  sample=37                               run.py:1128
+                             Sample error (id: 37, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=39                               run.py:1128
+                             Sample error (id: 39, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:37] WARNING  sample=34                               run.py:1128
+                             Sample error (id: 34, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:38] WARNING  sample=35                               run.py:1128
+                             Sample error (id: 35, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:39] WARNING  sample=43                               run.py:1128
+                             Sample error (id: 43, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:40] WARNING  sample=44                               run.py:1128
+                             Sample error (id: 44, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:41] WARNING  sample=40                               run.py:1128
+                             Sample error (id: 40, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=30                               run.py:1128
+                             Sample error (id: 30, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:42] WARNING  sample=31                               run.py:1128
+                             Sample error (id: 31, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:44] WARNING  sample=51                               run.py:1128
+                             Sample error (id: 51, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:45] WARNING  sample=54                               run.py:1128
+                             Sample error (id: 54, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=41                               run.py:1128
+                             Sample error (id: 41, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=47                               run.py:1128
+                             Sample error (id: 47, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:48] WARNING  sample=56                               run.py:1128
+                             Sample error (id: 56, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:51] WARNING  sample=48                               run.py:1128
+                             Sample error (id: 48, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:52] WARNING  sample=50                               run.py:1128
+                             Sample error (id: 50, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=57                               run.py:1128
+                             Sample error (id: 57, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:53] WARNING  sample=46                               run.py:1128
+                             Sample error (id: 46, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=38                               run.py:1128
+                             Sample error (id: 38, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:54] WARNING  sample=45                               run.py:1128
+                             Sample error (id: 45, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=32                               run.py:1128
+                             Sample error (id: 32, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:55] WARNING  sample=52                               run.py:1128
+                             Sample error (id: 52, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:56] WARNING  sample=42                               run.py:1128
+                             Sample error (id: 42, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=53                               run.py:1128
+                             Sample error (id: 53, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=49                               run.py:1128
+                             Sample error (id: 49, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:57] WARNING  sample=58                               run.py:1128
+                             Sample error (id: 58, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=59                               run.py:1128
+                             Sample error (id: 59, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:05:58] WARNING  sample=55                               run.py:1128
+                             Sample error (id: 55, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:00] WARNING  sample=60                               run.py:1128
+                             Sample error (id: 60, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=63                               run.py:1128
+                             Sample error (id: 63, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:01] WARNING  sample=64                               run.py:1128
+                             Sample error (id: 64, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:02] WARNING  sample=65                               run.py:1128
+                             Sample error (id: 65, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=62                               run.py:1128
+                             Sample error (id: 62, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:04] WARNING  sample=67                               run.py:1128
+                             Sample error (id: 67, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=69                               run.py:1128
+                             Sample error (id: 69, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:05] WARNING  sample=66                               run.py:1128
+                             Sample error (id: 66, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:06] WARNING  sample=68                               run.py:1128
+                             Sample error (id: 68, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:08] WARNING  sample=70                               run.py:1128
+                             Sample error (id: 70, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=61                               run.py:1128
+                             Sample error (id: 61, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:09] WARNING  sample=71                               run.py:1128
+                             Sample error (id: 71, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:10] WARNING  sample=75                               run.py:1128
+                             Sample error (id: 75, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=74                               run.py:1128
+                             Sample error (id: 74, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:12] WARNING  sample=78                               run.py:1128
+                             Sample error (id: 78, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=72                               run.py:1128
+                             Sample error (id: 72, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:13] WARNING  sample=80                               run.py:1128
+                             Sample error (id: 80, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:14] WARNING  sample=83                               run.py:1128
+                             Sample error (id: 83, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:15] WARNING  sample=81                               run.py:1128
+                             Sample error (id: 81, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:16] WARNING  sample=86                               run.py:1128
+                             Sample error (id: 86, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:17] WARNING  sample=77                               run.py:1128
+                             Sample error (id: 77, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=73                               run.py:1128
+                             Sample error (id: 73, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:18] WARNING  sample=88                               run.py:1128
+                             Sample error (id: 88, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:20] WARNING  sample=87                               run.py:1128
+                             Sample error (id: 87, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:21] WARNING  sample=85                               run.py:1128
+                             Sample error (id: 85, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=79                               run.py:1128
+                             Sample error (id: 79, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=91                               run.py:1128
+                             Sample error (id: 91, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:22] WARNING  sample=90                               run.py:1128
+                             Sample error (id: 90, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:24] WARNING  sample=76                               run.py:1128
+                             Sample error (id: 76, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:25] WARNING  sample=92                               run.py:1128
+                             Sample error (id: 92, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=94                               run.py:1128
+                             Sample error (id: 94, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:26] WARNING  sample=96                               run.py:1128
+                             Sample error (id: 96, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:27] WARNING  sample=100                              run.py:1128
+                             Sample error (id: 100, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:28] WARNING  sample=93                               run.py:1128
+                             Sample error (id: 93, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:29] WARNING  sample=102                              run.py:1128
+                             Sample error (id: 102, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=89                               run.py:1128
+                             Sample error (id: 89, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:30] WARNING  sample=97                               run.py:1128
+                             Sample error (id: 97, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:32] WARNING  sample=104                              run.py:1128
+                             Sample error (id: 104, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=82                               run.py:1128
+                             Sample error (id: 82, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:33] WARNING  sample=101                              run.py:1128
+                             Sample error (id: 101, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=99                               run.py:1128
+                             Sample error (id: 99, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:34] WARNING  sample=98                               run.py:1128
+                             Sample error (id: 98, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:35] WARNING  sample=84                               run.py:1128
+                             Sample error (id: 84, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:36] WARNING  sample=111                              run.py:1128
+                             Sample error (id: 111, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:37] WARNING  sample=110                              run.py:1128
+                             Sample error (id: 110, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=112                              run.py:1128
+                             Sample error (id: 112, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:40] WARNING  sample=114                              run.py:1128
+                             Sample error (id: 114, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:41] WARNING  sample=116                              run.py:1128
+                             Sample error (id: 116, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=107                              run.py:1128
+                             Sample error (id: 107, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:42] WARNING  sample=105                              run.py:1128
+                             Sample error (id: 105, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=103                              run.py:1128
+                             Sample error (id: 103, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=108                              run.py:1128
+                             Sample error (id: 108, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:43] WARNING  sample=95                               run.py:1128
+                             Sample error (id: 95, epoch: 1): Error             
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:44] WARNING  sample=115                              run.py:1128
+                             Sample error (id: 115, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:45] WARNING  sample=106                              run.py:1128
+                             Sample error (id: 106, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:46] WARNING  sample=118                              run.py:1128
+                             Sample error (id: 118, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:47] WARNING  sample=122                              run.py:1128
+                             Sample error (id: 122, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:48] WARNING  sample=120                              run.py:1128
+                             Sample error (id: 120, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=124                              run.py:1128
+                             Sample error (id: 124, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:49] WARNING  sample=119                              run.py:1128
+                             Sample error (id: 119, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:50] WARNING  sample=123                              run.py:1128
+                             Sample error (id: 123, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:51] WARNING  sample=126                              run.py:1128
+                             Sample error (id: 126, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:52] WARNING  sample=109                              run.py:1128
+                             Sample error (id: 109, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=127                              run.py:1128
+                             Sample error (id: 127, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:53] WARNING  sample=128                              run.py:1128
+                             Sample error (id: 128, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=117                              run.py:1128
+                             Sample error (id: 117, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:55] WARNING  sample=121                              run.py:1128
+                             Sample error (id: 121, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:56] WARNING  sample=129                              run.py:1128
+                             Sample error (id: 129, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=131                              run.py:1128
+                             Sample error (id: 131, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:57] WARNING  sample=125                              run.py:1128
+                             Sample error (id: 125, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=133                              run.py:1128
+                             Sample error (id: 133, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:06:59] WARNING  sample=135                              run.py:1128
+                             Sample error (id: 135, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:00] WARNING  sample=134                              run.py:1128
+                             Sample error (id: 134, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=113                              run.py:1128
+                             Sample error (id: 113, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:01] WARNING  sample=141                              run.py:1128
+                             Sample error (id: 141, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:02] WARNING  sample=138                              run.py:1128
+                             Sample error (id: 138, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:03] WARNING  sample=137                              run.py:1128
+                             Sample error (id: 137, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=132                              run.py:1128
+                             Sample error (id: 132, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:04] WARNING  sample=130                              run.py:1128
+                             Sample error (id: 130, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:05] WARNING  sample=140                              run.py:1128
+                             Sample error (id: 140, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:06] WARNING  sample=143                              run.py:1128
+                             Sample error (id: 143, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+                    WARNING  sample=136                              run.py:1128
+                             Sample error (id: 136, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:07] WARNING  sample=142                              run.py:1128
+                             Sample error (id: 142, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+[06/26/26 02:07:08] WARNING  sample=139                              run.py:1128
+                             Sample error (id: 139, epoch: 1): Error            
+                             code: 402 - {'error': {'message':                  
+                             'Insufficient credits. Add more using              
+                             https://openrouter.ai/settings/credits'            
+                             , 'code': 402}})                                   
+╭──────────────────────────────────────────────────────────────────────────────╮
+│task (143 samples): openrouter/openai/gpt-5.2                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+max_connections: 20, max_tokens: 30000, reasoning_effort: xhigh, fail_on_error: 
+False, time_limit: 400, dataset: (samples)                                      
+                                                                                
+total time:                                   0:02:00                           
+                                                                                
+                                                                                
+WARNING: 143 of 143 executed samples (100%) had errors and were not scored.     
+                                                                                
+Log:                                                                            
+../../capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/20
+26-06-26T01-05-08-00-00_task_MWmkZfSkFnUMKu6WZPEzBL.eval                        
+                                                                                LEVELSUM {"model_tag": "gpt52", "model": "openrouter/openai/gpt-5.2", "effort": "xhigh", "n_scored": 0, "n_parsed": 0, "unparsed": 0, "mean": 0.0, "tok_in": 0, "tok_out": 0, "tok_reasoning": 0, "cost_usd": 0.0, "elapsed_sec": 120.3, "log": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/control_paper/logs/levels_sonnet/2026-06-26T01-05-08-00-00_task_MWmkZfSkFnUMKu6WZPEzBL.eval"}

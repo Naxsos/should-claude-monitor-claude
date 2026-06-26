@@ -33,6 +33,7 @@ MODELS = {
     "gemini":   ("openrouter/google/gemini-2.5-flash",   0.30e-6, 2.50e-6),
     "gpt5":     ("openrouter/openai/gpt-5",              1.25e-6, 10.0e-6),
     "haiku":    ("openrouter/anthropic/claude-haiku-4.5", 1.0e-6, 5.0e-6),
+    "gpt52":    ("openrouter/openai/gpt-5.2",            1.75e-6, 14.0e-6),
 }
 OUT = BASE / "logs" / "levels_sonnet"
 OUT.mkdir(parents=True, exist_ok=True)

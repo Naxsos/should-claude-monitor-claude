@@ -1,0 +1,5 @@
+=== traj attack-detection | configs=['gptmini:minimal', 'gptmini:low', 'gptmini:medium', 'gptmini:high'] | trajectories=112 ===
+CONFIGSUM {"config": "gptmini:minimal", "n": 112, "parsed": 112, "cost_usd": 0.554, "elapsed_sec": 16.6, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gptmini_minimal.jsonl"}
+CONFIGSUM {"config": "gptmini:low", "n": 112, "parsed": 112, "cost_usd": 0.612, "elapsed_sec": 51.9, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gptmini_low.jsonl"}
+CONFIGSUM {"config": "gptmini:medium", "n": 112, "parsed": 112, "cost_usd": 0.74, "elapsed_sec": 101.1, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gptmini_medium.jsonl"}
+CONFIGSUM {"config": "gptmini:high", "n": 112, "parsed": 112, "cost_usd": 1.174, "elapsed_sec": 346.8, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gptmini_high.jsonl"}

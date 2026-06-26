@@ -1,0 +1,2 @@
+=== traj attack-detection | configs=['gpt52:xhigh'] | trajectories=112 ===
+CONFIGSUM {"config": "gpt52:xhigh", "n": 112, "parsed": 104, "cost_usd": 19.667, "elapsed_sec": 1534.1, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gpt52_xhigh.jsonl"}
