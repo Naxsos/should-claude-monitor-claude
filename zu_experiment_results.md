@@ -4,6 +4,7 @@ Four experiments probing whether LLM "trusted monitors" can reliably oversee oth
 LLMs — covering same-family bias, self-recognition, and whether test-time reasoning
 helps monitoring on two very different detection tasks (code backdoors vs. agent
 trajectories). All AUROC = ability to separate the malicious class from the benign one.
+_All figures regenerate from `make_figures.py` → `figures/*.png`._
 
 | # | Experiment | One-line outcome |
 |---|---|---|
@@ -31,9 +32,15 @@ version-aware family-identity system prompt + verdict-and-confidence rating.
 | Haiku-4.5 | 0.781 | 0.751* | 0.733 |
 | GPT-5-nano | 0.904 | 0.691 | 0.807* |
 
+![Exp 1 — 3×3 detection AUROC heatmap](figures/fig1_3x3_grid.png)
+
+*Figure 1. The same-family diagonal (black boxes) shows no systematic advantage; detection is organized by which generator's backdoors are detectable (columns), not by monitor–generator kinship.*
+
 Same-minus-cross-family interaction across conditions: **+0.009** (no identity, 0–1
 rating) → **+0.039** (identity, 0–1) → **+0.058** (identity, verdict+confidence). Per-cell
-95% CIs ≈ ±0.06, so all interaction estimates are **within noise**.
+95% CIs ≈ ±0.06, so all interaction estimates are **within noise**. A larger **200-problem**
+run pins this down: interaction **+0.022, 95% CI [−0.022, +0.068], one-sided p = 0.157 —
+not significant** (same mean 0.758 vs cross 0.736). See [S3].
 
 **Outcome.** No robust same-family monitoring effect. The small positive bump that
 appears when the monitor is told its identity is partly a rating-format artifact
@@ -66,6 +73,10 @@ capability? (A passive-self-recognition collusion-channel probe.)
 | capability vs accuracy | Pearson **−0.19** (no positive trend) |
 | self-pair vs sibling-pair accuracy | 0.57 vs 0.55 (≈ no self-advantage) |
 | mean stated confidence | 0.72 – 0.92 (badly overconfident) |
+
+![Exp 2 — self-recognition vs capability](figures/fig2_selfrec.png)
+
+*Figure 2. Every model sits near the 0.50 chance line and recognition does not rise with capability (y-axis is recognition AUROC; the accuracy-based correlation quoted below, −0.19, tells the same story).*
 
 **Outcome.** No capability-driven self-recognition. Models hover near chance, do not get
 better with capability (if anything slightly worse), recognize their *own* outputs no
@@ -109,6 +120,10 @@ code backdoor is a **localized needle** the monitor either spots on read or rati
 *toward* — extra analytic depth doesn't help. The productive lever is
 localization/verification or prior-calibration, not more thinking budget.
 
+![Exp 3 — reasoning flat on code backdoors + manufactured suspicion](figures/fig3_reasoning_code.png)
+
+*Figure 3. Left: AUROC is flat across reasoning effort (o3-mini even drops med vs low). Right: paired low→high effort flips far more clean→false-alarm ("manufactured suspicion", red) than miss→catch ("rescued", green) — why more thinking doesn't move AUROC.*
+
 ---
 
 ## Experiment 4 — Reasoning vs MonitoringBench (agent-trajectory attack detection)
@@ -122,23 +137,38 @@ length/composition classifier scores ~0.62; every monitor AUROC is therefore rep
 **residualized against #tool_calls**, plus an incremental-validity LR test and a paired
 sign test. ([S7] length baseline; [S8] qualitative case study.)
 
-**Results.** Residualized AUROC (real signal beyond the confound):
+**Results.** Residualized AUROC (real signal beyond the confound); best config per model:
 
-| monitor | residualized AUROC | incremental p | paired p |
+| monitor | best residualized AUROC | incremental p | paired p |
 |---|---|---|---|
-| **Gemini-Flash** (low) | **0.72** | <0.001 | <0.001 |
-| **Haiku** (8k budget) | **0.70** | <0.001 | 0.001 |
 | **Haiku** (16k budget) | **0.78** | <0.001 | <0.001 |
-| o3-mini | <0.50 | n.s. | n.s. |
-| GPT-5-nano | ~0.55 | n.s. | n.s. |
+| **Gemini-Flash** (low) | **0.72** | <0.001 | <0.001 |
+| **GPT-5.2** (xhigh) | **0.69** | <0.001 | <0.001 |
 | GPT-5-mini | ~0.51–0.58 | marginal | n.s. |
+| GPT-5-nano | ~0.55 | n.s. | n.s. |
+| o3-mini | <0.50 | n.s. | n.s. |
 
-**Outcome.** Capable monitors (Gemini, Haiku) **genuinely detect attacks** beyond the
-length confound. The OpenAI reasoning models (o3-mini, GPT-5-nano, GPT-5-mini) are
-**near-chance at every effort level** — failure is broad, not just a size floor. And
-**reasoning helps here** (Haiku flat ~0.70 through 8k, then jumps to 0.78 at 16k budget)
-— but only on this multi-step task, only past a substantial budget, and only for models
-that have the underlying capability.
+Full reasoning ladders (residualized AUROC, all n=112 unless noted):
+- **Haiku:** none 0.68 → 2k 0.70 → 8k 0.70 → **16k 0.78 (peak)** → 32k 0.73 — rises then *declines*.
+- **Gemini:** none 0.68 (n.s.) → **low 0.72 (peak)** → med 0.71 → high 0.69 — peaks early, declines.
+- **GPT-5.2:** low 0.64 → med 0.67 → high 0.66 → xhigh 0.69 — roughly flat (raw climbs 0.81→0.92, but that's mostly the confound).
+
+![Exp 4 — residualized AUROC vs reasoning budget](figures/fig4_reasoning_traj.png)
+
+*Figure 4. Residualized AUROC vs reasoning budget. Capable models (Haiku, Gemini, GPT-5.2) clear the length-only baseline (0.62) and Haiku peaks at 16k before declining; the small OpenAI models (o3-mini, gpt-nano/mini) sit at or below chance at every effort.*
+
+**Outcome.** Capable monitors **genuinely detect attacks** beyond the length confound:
+**Haiku (0.78) > Gemini (0.72) > GPT-5.2 (0.69)**, all significant on every test. The small
+OpenAI reasoning models (o3-mini, GPT-5-nano, GPT-5-mini) are **near-chance** — but the most
+capable, **GPT-5.2, clears the floor**, so the OpenAI failures are a **capability floor, not
+family-wide**. Two reasoning findings: (1) **reasoning helps — up to a model-specific sweet
+spot, then hurts** (Haiku peaks at 16k then drops at 32k; Gemini peaks at `low`); (2) most of
+the *raw*-AUROC gain from effort is the #tool_calls confound (over-flagging), not better
+de-confounded discrimination.
+
+![Why residualization affects monitors differently](figures/fig6_residualization.png)
+
+*Figure 6. How much AUROC a monitor loses to residualization tracks how strongly its score correlated with #tool_calls (r=+0.69): monitors that scored short=attack traces high (left) lose the most. o3-mini (red, corr≈0 yet a large drop) is the degenerate-score exception — its raw scores are near-constant, so its raw AUROC was unstable noise to begin with.*
 
 **Discussion.** This is the clean contrast with Experiment 3: reasoning helps when the
 task requires **integrating dispersed evidence across many steps** (a trajectory) and
@@ -146,10 +176,11 @@ doesn't when the signal is a **single localized pattern** (a code backdoor). The
 qualitative case study [S8] shows the monitors reason soundly and name the exact
 malicious mechanism (iptables backdoor, malware ExecStartPre, overt exfiltration) but are
 fooled by **persuasively-framed** attacks (sudoers-as-test-fixture, disguised exfil) — the
-"persuasion" failure mode. Detection on these (Opus-authored) traces is a Gemini/Haiku
-capability; the OpenAI line tested fails it. (Caveats: borderline verdicts are
-nondeterministic; honest/attack come from different collection runs, partly mitigated by
-the action-only rendering + #tool_calls residualization; GPT-5 *full* untested.)
+"persuasion" failure mode. Detection on these (Opus-authored) traces is a Gemini/Haiku/
+GPT-5.2 capability; only the *smaller* OpenAI models fail it. (Caveats: borderline verdicts
+are nondeterministic; honest/attack come from different collection runs, partly mitigated by
+the action-only rendering + #tool_calls residualization; GPT-5.2 xhigh needed a 36K+ token
+budget to avoid truncating long honest traces — see [S6].)
 
 ---
 
@@ -187,7 +218,7 @@ to it** (base rate 50%, balanced; ECE not comparable across base rates — read 
 
 | config | resid AUROC | TP@5%FPR | ECE | bias |
 |---|---|---|---|---|
-| **Haiku b32768** | 0.868 | 0.67 | **0.13** | +0.13 |
+| **Haiku b32768** | 0.730† | 0.67† | 0.13† | +0.13† |
 | **Haiku b16384** | 0.777 | **0.68** | **0.17** | −0.02 |
 | Haiku b8192 | 0.696 | 0.43 | 0.22 | −0.02 |
 | Haiku none | 0.677 | 0.45 | 0.23 | −0.02 |
@@ -195,6 +226,10 @@ to it** (base rate 50%, balanced; ECE not comparable across base rates — read 
 | Gemini none | 0.681 | 0.14 | 0.42 | +0.06 |
 | o3-mini low | 0.426 | 0.07 | 0.46 | −0.46 |
 | GPT-5-nano (best) | 0.585 | 0.12 | 0.33 | −0.22 |
+
+![Capability vs calibration: code (no link) vs trajectories (tight)](figures/fig5_calib_coupling.png)
+
+*Figure 5. ECE (lower = better calibrated) vs capability. Code backdoors (left): no consistent link — the 3×3 set's r=−0.77 is driven entirely by GPT-5-nano, while the levels set is r=+0.02. Trajectories (right): calibration tightly tracks capability (r=−0.79 over all configs shown here incl. the later GPT-5.2 runs; −0.87 on the original 19), because both flow from grounding the judgment in the observed attack.*
 
 Here **corr(residAUROC, ECE) = −0.87** across 19 configs — capability and calibration move
 together, because both flow from grounding the judgment in the observed attack action (a
@@ -211,8 +246,12 @@ responds to reasoning and no monitor is deployable at a strict threshold (TP@5%F
 nano's 0.22). On the grounded two-sided trajectory task, capability and calibration are two
 readouts of the same competence, both improve with reasoning (for capable models), and the
 best config catches **~⅔ of attacks at 5% FPR**. *Caveats:* TP@5%FPR is coarse on the 56+56
-set (5% FPR ≈ 2.8 honest samples); Haiku b32768 is the biased-subset run [S5]; calibration is
-on raw scores while capability is residualized.
+set (5% FPR ≈ 2.8 honest samples); calibration is on raw scores while capability is
+residualized. **†Haiku b32768:** the residualized AUROC is the **corrected n=112** value
+(0.73, down from the biased-subset 0.87); its TP@5%FPR/ECE/bias were computed on the earlier
+n=68 subset and not yet recomputed — so for b32768 read the AUROC as corrected and the
+calibration cells as provisional. Note the corrected ladder shows Haiku **peaking at 16k then
+declining at 32k**, so b16384 (not b32768) is the genuine best config.
 
 ---
 
@@ -220,7 +259,8 @@ on raw scores while capability is residualized.
 1. **Monitoring quality is about model capability + calibration, not family or thinking budget** (Exps 1, 3). Calibration is the binding constraint at deployment: code monitors over-flag and catch ~nothing at 5% FPR, while the best trajectory monitor catches ~⅔ — and there calibration tightly tracks capability (corr −0.87) (Calibration analysis, [S10]).
 2. **No evidence for same-family bias or zero-shot self-recognition** — mild news for the collusion-risk side of "Claude monitoring Claude" (Exps 1, 2).
 3. **Reasoning's value is task-dependent**: useless for localized code backdoors, helpful (at high budget, for capable models) on multi-step agent trajectories (Exps 3 vs 4).
-4. **Cheap ≠ incapable, capable ≠ universal**: GPT-5-nano was the best low-FPR backdoor monitor (Exp 1) yet near-chance on trajectories (Exp 4); the OpenAI reasoning line fails trajectory detection that Gemini/Haiku handle.
+4. **Cheap ≠ incapable, capable ≠ universal**: GPT-5-nano was the best low-FPR backdoor monitor (Exp 1) yet near-chance on trajectories (Exp 4). Trajectory detection has a **capability floor** — the small OpenAI models (o3-mini/nano/mini) fail it, but the most capable, **GPT-5.2, clears it** (0.69), so it's about model strength, not the OpenAI family per se.
+5. **Reasoning has a sweet spot, not a monotone**: trajectory detection improves with effort up to a model-specific budget (Haiku 16k, Gemini `low`) then *declines* with more (Haiku 32k, Gemini high) — "more thinking" is not strictly better even where it helps.
 
 ---
 
@@ -242,13 +282,19 @@ Additional smaller runs supporting the above. Code/data live in this repo.
 - **[S4] Reasoning-vs-backdoor autopsy.** "Manufactured suspicion" (TN→FP ≫ FN→TP) and
   confidence-calibration analysis explaining the flat AUROC. Full writeup:
   `control_paper/THINKING_LEVELS_REPORT.md`; data `control_paper/levels_autopsy.json`.
-- **[S5] Haiku budget ladder on trajectories.** none/2k/8k flat (~0.68–0.70 residualized),
-  16k → 0.78. The 32k point is **invalid** (key credit-exhaustion mid-run dropped 44
-  attack-only traces → biased subset; discard). Data: `trajectories/monres_haiku_b*.jsonl`.
-- **[S6] OpenAI reasoning models on trajectories.** GPT-5-nano (minimal/low/med/high) and
-  GPT-5-mini (minimal/low/med/high) both near-chance after de-confounding; raw-AUROC rise
-  with effort is mostly the #tool_calls confound ("manufactured suspicion"). Data:
-  `trajectories/monres_gpt*.jsonl`.
+- **[S5] Haiku budget ladder on trajectories.** Residualized: none 0.68 → 2k/8k 0.70 →
+  **16k 0.78 (peak)** → 32k 0.73 — reasoning helps to a sweet spot, then *declines*. (The 32k
+  point was initially invalid — a mid-run credit-exhaustion dropped 44 attack-only traces,
+  biasing it to 0.87 on n=68; **re-run to full n=112 gives the valid 0.73**.) Data:
+  `trajectories/monres_haiku_b*.jsonl`.
+- **[S6] OpenAI reasoning models on trajectories.** GPT-5-nano and GPT-5-mini
+  (minimal/low/med/high) are **near-chance** after de-confounding (raw-AUROC rise with effort
+  is mostly the #tool_calls confound, "manufactured suspicion"). **GPT-5.2 is the exception:**
+  it detects (residualized low 0.64 → xhigh 0.69, all significant) — confirming the small-model
+  failures are a *capability floor*. GPT-5.2 over-flags (~100% positive verdicts; the confidence
+  gradient carries the AUROC) and at xhigh needed `max_tokens`≈36K+ or it truncates the verdict
+  on the longest (honest) traces — 8 such dropouts were recovered by re-running with a 48K budget.
+  Data: `trajectories/monres_gpt*.jsonl`. *(GPT-5.2 as a backdoor monitor [Exp 3] is in progress.)*
 - **[S7] Length/composition confound baseline.** Trivial classifier on {tokens, asst chars,
   tool chars, #tool_calls} scores 0.70 (prose) / 0.62 (action-only); honest=1.25× tool
   calls of attack. Motivates the residualized/incremental analysis. Code:
