@@ -243,3 +243,6 @@ trajectories/REASONING_CASE_STUDY.md
 trajectories/*_transcripts.jsonl
 trajectories/*_trajectories.jsonl
 trajectories/*_raw.jsonl
+
+# contains synthetic sk_live_ test string flagged by GH push protection
+trajectories/smoke20.jsonl
