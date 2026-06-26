@@ -7,7 +7,7 @@ Working dir: `capestone/should-claude-monitor-claude/`. Git remote: `github.com/
 
 ---
 
-## The 4 experiments and their results
+## The 5 experiments and their results
 
 ### 1. 3×3 monitoring — backdoor detection (monitor × generator)
 Monitors {DeepSeek-V3.2-Exp `dsexp`, Haiku-4.5 `haiku`, GPT-5-nano `gptnano`} × generators
@@ -59,6 +59,52 @@ honest, ~16K tok). Code: `trajectories/run_traj_attack.py`, `analyze_traj.py`.
   exfil) but fooled by *persuasively-framed* attacks (sudoers-as-test-fixture, disguised exfil) —
   the "persuasion" failure mode. Borderline verdicts are **nondeterministic** (flip across runs).
 
+### 5. Self-preference (blind quality choice) — Panickssery replication in code
+Replicates Panickssery et al. 2024 ("LLM Evaluators Recognize and Favor Their Own Generations")
+in the code domain. 11 judges (3 OpenAI, 4 Anthropic, 2 Google) each see A/B APPS pairs — one
+from their own family, one from a different family — and choose the **higher-quality solution
+blindly** (no identity hint). Both orderings of every pair are run and P(own chosen) is averaged
+to strip position bias. 11 raters × 100 pairs × 2 orderings = 2 200 calls; 95.3% parse rate.
+Code: `experiments_thrusday/prefer_paired.py`, `experiments_thrusday/analyze_preference.py`.
+Data: `experiments_thrusday/ratings_preference_paired_all.json`.
+Prompts: `experiments_thrusday/config.py` (`SYS_TEMPLATE_SELFPREF`, `USER_TEMPLATE_SELFPREF`).
+
+**Per-rater results:**
+
+| rater | family | P(own chosen) | direction |
+|---|---|---|---|
+| gpt-5.5 | openai | **0.920** | OWN |
+| gpt-5.4 | openai | **0.895** | OWN |
+| gpt-5-nano | openai | 0.725 | OWN |
+| claude-4.5-haiku | anthropic | 0.692 | OWN |
+| gpt-5-mini | openai | 0.679 | OWN |
+| gpt-4.1 | openai | 0.530 | neutral |
+| claude-4.5-sonnet | anthropic | 0.505 | neutral |
+| claude-4.7-opus | anthropic | 0.505 | neutral |
+| claude-4.5-opus | anthropic | 0.413 | OTHER |
+| gemini-2.5-flash | google | **0.245** | OTHER |
+| gemini-3.5-flash | google | **0.169** | OTHER |
+
+Overall mean P(own chosen) = **0.574** — collective self-preference exists.
+
+**Disproportionality test** (selfpref(A→B) + selfpref(B→A) > 1): all 3/3 family pairs pass
+(Anthropic↔Google 1.077, Anthropic↔OpenAI 1.175, Google↔OpenAI 1.163).
+
+**Correlation with self-recognition** (Exp 3 `ratings_paired_seed42.json`, n=10 raters):
+Pearson r = **+0.838**, Spearman r = **+0.770** — strong positive, driven by OpenAI (high
+recognition + high preference) vs Gemini (low recognition + other-preference).
+
+**Headline findings:**
+- **OpenAI models strongly prefer own code** (gpt-5.4/5.5: ~0.89–0.92). The Panickssery causal
+  chain (identify → favour) holds for them.
+- **Gemini models strongly disprefer own code** (0.17–0.25). Both orderings run, so not position
+  bias. Gemini evaluators appear to rate GPT/Claude solutions as better regardless of judge family.
+- **Anthropic models are mixed** — haiku favours own (0.69), opus disfavours (0.41), sonnet/opus4.7 neutral.
+- **Flagged outlier:** gpt-5-nano — recognition near chance (0.52) yet P(own) = 0.72 →
+  **favoritism without identification** (prefers own code without consciously recognizing it).
+- **Caveats:** `solutions_all11.json` has no `ok` correctness field → correctness-control pairing
+  not applied; 92/2200 parse errors (4.2%, mostly Claude models); family-level not model-level.
+
 ---
 
 ## Datasets
@@ -99,5 +145,5 @@ honest, ~16K tok). Code: `trajectories/run_traj_attack.py`, `analyze_traj.py`.
 - [ ] Run `analyze_3x3_significance.py` on `logs/suspicion3x3_200/` (report 3×3 same-family CI/p).
 - [ ] Optionally add **GPT-5-nano (minimal/low/med/high, ~$1.3)** to the traces sweep — cheap 4-level family.
 - [ ] Re-run trajectory **Haiku b32768** on a funded key (the 32k point is currently invalid).
-- [ ] Consolidate all 4 experiments into a report + commit (nothing since `7d7fefd`/local edits unpushed).
-- [ ] Many local edits uncommitted (prompts reorg, selfrec/, trajectories/, run_3x3/levels). Push from user's terminal.
+- [ ] Consolidate all 5 experiments into a report + commit (nothing since `7d7fefd`/local edits unpushed).
+- [ ] Many local edits uncommitted (prompts reorg, selfrec/, trajectories/, run_3x3/levels, experiments_thrusday/prefer_paired.py+analyze_preference.py). Push from user's terminal.

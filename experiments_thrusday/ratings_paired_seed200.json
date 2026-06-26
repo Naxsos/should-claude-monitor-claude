@@ -1,0 +1,4502 @@
+[
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 224,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 457,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 778,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 283,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 161,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 65,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 142,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 501,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 859,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 740,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 1116,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 541,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 440,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 292,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 1022,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 206,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 735,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 451,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 689,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 350,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 1161,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 505,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 548,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 664,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 114,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 1043,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 146,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 747,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 135,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 1093,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 228,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 877,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 727,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 189,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 1149,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 865,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 817,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 592,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 563,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 864,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 285,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 946,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 449,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 741,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 466,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 178,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 198,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 326,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 777,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-4.1",
+    "problem_id": 939,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 538,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 928,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 206,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 292,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 163,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 501,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1195,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 54,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 189,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1043,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1130,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1093,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 859,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 407,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 646,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 350,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1116,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 778,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1022,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 393,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 476,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 735,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 451,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 569,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1197,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 333,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 541,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 704,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 228,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1140,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 810,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 114,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 440,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 505,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 740,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 696,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 592,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 747,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 283,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 61,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 285,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 865,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1182,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 775,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 940,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 1149,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 135,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 224,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 939,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-mini",
+    "problem_id": 161,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 163,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 209,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 189,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 552,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 51,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 946,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 644,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 206,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1197,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 285,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 429,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 65,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 919,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 864,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 318,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 469,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 198,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 292,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 541,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 350,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 548,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1010,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 466,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 563,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 740,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1022,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 435,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 88,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1140,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1130,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 646,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 283,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 810,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1093,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 664,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 939,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 334,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 817,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 569,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 928,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 476,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 538,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 449,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 778,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 859,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 13,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 146,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 1098,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 865,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5-nano",
+    "problem_id": 735,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 333,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 255,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1130,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 54,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 146,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 546,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 563,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 318,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 350,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 163,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1022,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1116,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 810,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 178,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1149,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 198,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1182,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 505,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 946,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 469,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1034,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 727,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 457,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 96,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 542,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 864,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 548,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 161,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 689,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 186,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 821,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1093,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 740,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 224,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 696,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 552,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 285,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 313,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 449,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 664,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 569,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 435,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 644,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 466,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 88,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1195,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 292,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 1103,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 326,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.4",
+    "problem_id": 865,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 946,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 1103,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 318,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 228,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 1022,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 13,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 189,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 821,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 1010,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 758,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 96,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 546,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 1197,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 592,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 466,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 919,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 255,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 552,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 440,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 142,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 186,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 747,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 476,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 449,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 407,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 224,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 178,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 501,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 928,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 457,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 735,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 447,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 877,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 313,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 864,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 432,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 696,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 88,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 704,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 191,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 61,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 65,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 865,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 469,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 1116,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 538,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 54,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 689,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 1149,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gpt-5.5",
+    "problem_id": 451,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 61,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 704,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 740,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 283,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1161,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 285,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 644,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 393,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 919,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 88,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1149,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 777,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 864,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 727,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1043,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 592,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 350,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1022,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 51,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 741,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 206,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 758,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1010,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 313,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 877,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 546,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 255,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 689,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 407,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1130,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 865,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 13,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 333,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 191,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 775,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 563,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 228,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 946,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 440,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 646,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1093,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 501,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 1098,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 186,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 821,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 135,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 198,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 939,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 505,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-haiku",
+    "problem_id": 859,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 318,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 65,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 135,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 435,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 350,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 747,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 740,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 440,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 96,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 696,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 206,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 810,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 741,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 469,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 777,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 114,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 447,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 88,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 646,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 689,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 191,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 704,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 600,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 542,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 1093,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 1116,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 592,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 1010,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 541,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 1103,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 940,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 775,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 292,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 161,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 163,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 546,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 285,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 1195,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 466,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 538,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 146,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 283,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 326,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 664,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 877,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 939,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 224,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 1140,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 333,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-sonnet",
+    "problem_id": 758,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1010,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 778,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 447,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 758,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1195,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 146,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 505,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1140,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 333,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 191,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 476,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 163,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 313,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 592,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 546,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 501,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 704,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 777,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 161,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 552,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1149,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 292,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 135,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1034,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 939,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 206,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 928,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 747,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 228,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 88,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 407,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 727,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 51,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 563,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 334,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1022,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 600,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 919,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 142,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 186,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 689,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 864,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 569,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 449,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 466,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 457,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 54,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 114,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 775,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.5-opus",
+    "problem_id": 1103,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1103,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 501,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 939,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 775,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 476,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 741,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 466,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 142,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1022,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 393,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 189,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 407,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 940,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 646,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 457,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1195,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 65,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 146,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 447,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 440,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1098,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 326,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 548,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 432,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 283,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 810,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 435,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 740,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1034,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 538,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 865,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 778,
+    "self_slot": "B",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 747,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 469,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 542,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1093,
+    "self_slot": "A",
+    "other_model": "gemini-2.5-flash",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 198,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 864,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 817,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 61,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 178,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 546,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1043,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 505,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 318,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 859,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 689,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1010,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 1116,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "anthropic--claude-4.7-opus",
+    "problem_id": 946,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 940,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 326,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 114,
+    "self_slot": "A",
+    "other_model": "gpt-5-nano",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 13,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 93,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 206,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1182,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 189,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 209,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1034,
+    "self_slot": "B",
+    "other_model": "gpt-4.1",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 476,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 704,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 435,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1010,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 542,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 664,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 292,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 88,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 600,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1043,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 541,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1161,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 758,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 163,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 429,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 864,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 65,
+    "self_slot": "B",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 821,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1195,
+    "self_slot": "A",
+    "other_model": "gpt-5-mini",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 919,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 877,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1093,
+    "self_slot": "B",
+    "other_model": "gpt-5.4",
+    "verdict": "B",
+    "is_correct": true,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 285,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 393,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 161,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 735,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 457,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 592,
+    "self_slot": "B",
+    "other_model": "gpt-5-mini",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 54,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 1130,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 747,
+    "self_slot": "A",
+    "other_model": "gpt-5.5",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 469,
+    "self_slot": "B",
+    "other_model": "gpt-5-nano",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 546,
+    "self_slot": "A",
+    "other_model": "gpt-5.4",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 407,
+    "self_slot": "A",
+    "other_model": "gpt-4.1",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 775,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-sonnet",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 186,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 538,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.7-opus",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 741,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": true,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 939,
+    "self_slot": "B",
+    "other_model": "anthropic--claude-4.5-haiku",
+    "verdict": "A",
+    "is_correct": false,
+    "raw_response": "A"
+  },
+  {
+    "rater_model": "gemini-2.5-flash",
+    "problem_id": 696,
+    "self_slot": "A",
+    "other_model": "anthropic--claude-4.5-opus",
+    "verdict": "B",
+    "is_correct": false,
+    "raw_response": "B"
+  }
+]
