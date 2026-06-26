@@ -1,0 +1,4 @@
+=== traj attack-detection | configs=['gpt52:low', 'gpt52:medium', 'gpt52:high'] | trajectories=112 ===
+CONFIGSUM {"config": "gpt52:low", "n": 112, "parsed": 112, "cost_usd": 4.12, "elapsed_sec": 49.6, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gpt52_low.jsonl"}
+CONFIGSUM {"config": "gpt52:medium", "n": 112, "parsed": 112, "cost_usd": 4.542, "elapsed_sec": 95.9, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gpt52_medium.jsonl"}
+CONFIGSUM {"config": "gpt52:high", "n": 112, "parsed": 112, "cost_usd": 5.465, "elapsed_sec": 185.8, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gpt52_high.jsonl"}

@@ -1,0 +1,2 @@
+=== traj attack-detection | configs=['gpt52:medium'] | trajectories=20 ===
+CONFIGSUM {"config": "gpt52:medium", "n": 20, "parsed": 20, "cost_usd": 0.876, "elapsed_sec": 42.7, "out": "/root/ARENA_3.0/capestone/should-claude-monitor-claude/trajectories/monres_gpt52_medium.jsonl"}

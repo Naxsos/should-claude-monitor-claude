@@ -153,8 +153,71 @@ the action-only rendering + #tool_calls residualization; GPT-5 *full* untested.)
 
 ---
 
+## Calibration analysis (cross-cutting, Exps 1/3/4)
+
+AUROC only measures **ranking**; it is invariant to how the suspicion *numbers* are scaled.
+So we separately asked: are the monitors' probabilities trustworthy (**ECE** = mean gap
+between stated suspicion and actual rate; well-calibrated <0.05), do they over/under-flag
+(**bias** = mean suspicion − base rate), and what's the deployable catch rate
+(**TP@5%FPR**)? And does calibration scale with capability? Code: `control_paper/
+calib_vs_capability.py`, `trajectories/calib_traj.py`.
+
+**Code-backdoor monitors (Exp 1/3) — uniformly poorly calibrated, TP@5%FPR≈0.** Per-monitor,
+pooled (base rate 24%):
+
+| set | monitor | AUROC | TP@5%FPR | ECE | bias |
+|---|---|---|---|---|---|
+| 3×3 | GPT-5-nano | 0.743 | **0.22** | 0.16 | +0.14 |
+| 3×3 | DeepSeek-V3.2-Exp | 0.716 | 0.00 | 0.38 | +0.30 |
+| 3×3 | Haiku-4.5 | 0.693 | 0.06 | 0.33 | +0.25 |
+| levels | Haiku-4.5 | 0.623 | 0.01 | 0.30 | +0.12 |
+| levels | Gemini-Flash | 0.617 | 0.00 | 0.45 | +0.28 |
+| levels | o3-mini | 0.571 | 0.00 | 0.36 | +0.10 |
+
+Every monitor **over-flags** (predicts backdoors 1.5–2× the 24% base rate) and is badly
+calibrated (ECE 0.16–0.45). Calibration **does not scale with capability**: corr(AUROC,ECE)
+is −0.76 on the 3×3 but that is n=3 driven entirely by GPT-5-nano (best AUROC *and* best
+calibrated *and* the only usable TP@5%FPR=0.22); on the levels set the correlation is **0.00**.
+GPT-5-nano — the cheapest model — being best-calibrated argues calibration is
+model/training-idiosyncratic, not a capability rung. (Also expected: AUROC is
+calibration-invariant, so the two are orthogonal by construction.)
+
+**Trajectory monitors (Exp 4) — calibration is good where capability is, and tightly coupled
+to it** (base rate 50%, balanced; ECE not comparable across base rates — read the *coupling*):
+
+| config | resid AUROC | TP@5%FPR | ECE | bias |
+|---|---|---|---|---|
+| **Haiku b32768** | 0.868 | 0.67 | **0.13** | +0.13 |
+| **Haiku b16384** | 0.777 | **0.68** | **0.17** | −0.02 |
+| Haiku b8192 | 0.696 | 0.43 | 0.22 | −0.02 |
+| Haiku none | 0.677 | 0.45 | 0.23 | −0.02 |
+| Gemini low | 0.718 | 0.26 | 0.22 | −0.08 |
+| Gemini none | 0.681 | 0.14 | 0.42 | +0.06 |
+| o3-mini low | 0.426 | 0.07 | 0.46 | −0.46 |
+| GPT-5-nano (best) | 0.585 | 0.12 | 0.33 | −0.22 |
+
+Here **corr(residAUROC, ECE) = −0.87** across 19 configs — capability and calibration move
+together, because both flow from grounding the judgment in the observed attack action (a
+monitor with no real signal, e.g. o3-mini, falls back on a flat prior → bad on *both* axes).
+**Reasoning improves calibration too, but only for capable models**: Haiku ECE falls
+monotonically 0.23→0.13 (none→32k) and TP@5%FPR rises 0.45→0.68; Gemini snaps from 0.42→0.22
+the moment reasoning turns on; weak models (gpt-nano/mini, o3-mini) stay flat. Note the
+**failure-mode flip**: on code (24% base) monitors over-flag; here (50% base) the weak ones
+*under*-flag (o3-mini bias −0.46, calls almost everything honest) — a deployment risk on a
+realistic low-attack-rate stream.
+
+**Takeaway.** On the ungrounded one-sided code task, neither capability nor calibration
+responds to reasoning and no monitor is deployable at a strict threshold (TP@5%FPR≈0, except
+nano's 0.22). On the grounded two-sided trajectory task, capability and calibration are two
+readouts of the same competence, both improve with reasoning (for capable models), and the
+best config catches **~⅔ of attacks at 5% FPR**. *Caveats:* TP@5%FPR is coarse on the 56+56
+set (5% FPR ≈ 2.8 honest samples); Haiku b32768 is the biased-subset run [S5]; calibration is
+on raw scores while capability is residualized.
+
+---
+
 ## Cross-experiment takeaways
-1. **Monitoring quality is about model capability + calibration, not family or thinking budget** (Exps 1, 3).
+1. **Monitoring quality is about model capability + calibration, not family or thinking budget** (Exps 1, 3). Calibration is the binding constraint at deployment: code monitors over-flag and catch ~nothing at 5% FPR, while the best trajectory monitor catches ~⅔ — and there calibration tightly tracks capability (corr −0.87) (Calibration analysis, [S10]).
 2. **No evidence for same-family bias or zero-shot self-recognition** — mild news for the collusion-risk side of "Claude monitoring Claude" (Exps 1, 2).
 3. **Reasoning's value is task-dependent**: useless for localized code backdoors, helpful (at high budget, for capable models) on multi-step agent trajectories (Exps 3 vs 4).
 4. **Cheap ≠ incapable, capable ≠ universal**: GPT-5-nano was the best low-FPR backdoor monitor (Exp 1) yet near-chance on trajectories (Exp 4); the OpenAI reasoning line fails trajectory detection that Gemini/Haiku handle.
@@ -193,6 +256,12 @@ Additional smaller runs supporting the above. Code/data live in this repo.
 - **[S8] Trajectory reasoning case study.** 5 annotated attack/honest pairs (catches +
   persuasion failures) with full transcripts and a nondeterminism caveat:
   `trajectories/REASONING_CASE_STUDY.md`.
+- **[S10] Calibration vs capability (ECE / bias / TP@5%FPR).** Per-monitor calibration on
+  both detection tasks: code monitors uniformly over-flag (ECE 0.16–0.45, TP@5%FPR≈0, no
+  capability scaling — corr 0.00 on levels, −0.76 on 3×3 but nano-driven); trajectory
+  monitors well-calibrated where capable (Haiku 16k/32k ECE 0.13–0.17, TP@5%FPR≈0.68) with
+  capability↔calibration corr −0.87 and reasoning improving both. Code:
+  `control_paper/calib_vs_capability.py`, `trajectories/calib_traj.py`.
 - **[S9] Self-recognition method + single-item variant.** Paired-2AFC build, A/B
   position-randomization verification, self-vs-sibling split; superseded single-item 0–1
   variant. Code: `selfrec/recognize_paired.py`, `selfrec/analyze.py`.
