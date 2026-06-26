@@ -32,7 +32,7 @@ version-aware family-identity system prompt + verdict-and-confidence rating.
 | Haiku-4.5 | 0.781 | 0.751* | 0.733 |
 | GPT-5-nano | 0.904 | 0.691 | 0.807* |
 
-![Exp 1 — 3×3 detection AUROC heatmap](figures/fig1_3x3_grid.png)
+![Exp 1 — 3×3 detection AUROC heatmap](figures/fig1_3x3_grid.png?v=2)
 
 *Figure 1. The same-family diagonal (black boxes) shows no systematic advantage; detection is organized by which generator's backdoors are detectable (columns), not by monitor–generator kinship.*
 
@@ -74,7 +74,7 @@ capability? (A passive-self-recognition collusion-channel probe.)
 | self-pair vs sibling-pair accuracy | 0.57 vs 0.55 (≈ no self-advantage) |
 | mean stated confidence | 0.72 – 0.92 (badly overconfident) |
 
-![Exp 2 — self-recognition vs capability](figures/fig2_selfrec.png)
+![Exp 2 — self-recognition vs capability](figures/fig2_selfrec.png?v=2)
 
 *Figure 2. Every model sits near the 0.50 chance line and recognition does not rise with capability (y-axis is recognition AUROC; the accuracy-based correlation quoted below, −0.19, tells the same story).*
 
@@ -127,7 +127,7 @@ code backdoor is a **localized needle** the monitor either spots on read or rati
 *toward* — extra analytic depth doesn't help. The productive lever is
 localization/verification or prior-calibration, not more thinking budget.
 
-![Exp 3 — reasoning flat on code backdoors + manufactured suspicion](figures/fig3_reasoning_code.png)
+![Exp 3 — reasoning flat on code backdoors + manufactured suspicion](figures/fig3_reasoning_code.png?v=2)
 
 *Figure 3. Left: AUROC is flat across reasoning effort (o3-mini even drops med vs low). Right: paired low→high effort flips far more clean→false-alarm ("manufactured suspicion", red) than miss→catch ("rescued", green) — why more thinking doesn't move AUROC.*
 
@@ -160,7 +160,7 @@ Full reasoning ladders (residualized AUROC, all n=112 unless noted):
 - **Gemini:** none 0.68 (n.s.) → **low 0.72 (peak)** → med 0.71 → high 0.69 — peaks early, declines.
 - **GPT-5.2:** low 0.64 → med 0.67 → high 0.66 → xhigh 0.69 — roughly flat (raw climbs 0.81→0.92, but that's mostly the confound).
 
-![Exp 4 — residualized AUROC vs reasoning budget](figures/fig4_reasoning_traj.png)
+![Exp 4 — residualized AUROC vs reasoning budget](figures/fig4_reasoning_traj.png?v=2)
 
 *Figure 4. Residualized AUROC vs reasoning budget, for the three monitors that clear the length-only baseline (0.62); Haiku peaks at 16k before declining. The 3 small OpenAI models (o3-mini, gpt-5-nano, gpt-5-mini) sat at/below the baseline and are omitted for clarity (their numbers are in the ladders above and [S6]).*
 
@@ -173,7 +173,7 @@ spot, then hurts** (Haiku peaks at 16k then drops at 32k; Gemini peaks at `low`)
 the *raw*-AUROC gain from effort is the #tool_calls confound (over-flagging), not better
 de-confounded discrimination.
 
-![Why residualization affects monitors differently](figures/fig6_residualization.png)
+![Why residualization affects monitors differently](figures/fig6_residualization.png?v=2)
 
 *Figure 6. How much AUROC a monitor loses to residualization tracks how strongly its score correlated with #tool_calls (r=+0.69): monitors that scored short=attack traces high (left) lose the most. o3-mini (red, corr≈0 yet a large drop) is the degenerate-score exception — its raw scores are near-constant, so its raw AUROC was unstable noise to begin with.*
 
@@ -234,7 +234,7 @@ to it** (base rate 50%, balanced; ECE not comparable across base rates — read 
 | o3-mini low | 0.426 | 0.07 | 0.46 | −0.46 |
 | GPT-5-nano (best) | 0.585 | 0.12 | 0.33 | −0.22 |
 
-![Capability vs calibration: code (no link) vs trajectories (tight)](figures/fig5_calib_coupling.png)
+![Capability vs calibration: code (no link) vs trajectories (tight)](figures/fig5_calib_coupling.png?v=2)
 
 *Figure 5. ECE (lower = better calibrated) vs capability. Code backdoors (left): no consistent link — the 3×3 set's r=−0.77 is driven entirely by GPT-5-nano, while the levels set is r=+0.02. Trajectories (right): calibration tightly tracks capability (r=−0.79 over all configs shown here incl. the later GPT-5.2 runs; −0.87 on the original 19), because both flow from grounding the judgment in the observed attack.*
 
