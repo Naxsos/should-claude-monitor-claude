@@ -160,20 +160,24 @@ def fig3():
 def fig4(traj):
     order = {"none": 0, "minimal": 0, "low": 1, "b2048": 1, "medium": 2, "b8192": 2,
              "high": 3, "b16384": 3, "xhigh": 4, "b32768": 4}
+    # show only monitors that clear the length-only baseline; the 3 small OpenAI
+    # models (o3-mini, gpt-5-nano, gpt-5-mini) sit at/below it and are omitted.
+    KEEP = {"haiku", "gemini", "gpt52"}
     fams = {}
     for cfg, d in traj.items():
+        if d["fam"] not in KEEP:
+            continue
         fams.setdefault(d["fam"], []).append((order.get(d["lvl"], 9), d["lvl"], d["resid"]))
     fig, ax = plt.subplots(figsize=(8.2, 5.2))
     for fam, pts in fams.items():
         pts.sort(); xs = [p[0] for p in pts]; ys = [p[2] for p in pts]
         ax.plot(xs, ys, "-o", color=COL.get(fam, "k"), label=fam, lw=2, ms=7)
-    ax.axhline(0.5, color="gray", ls=":", lw=1, label="chance (no signal)")
-    ax.axhline(0.62, color="brown", ls="--", lw=1, label="length-only baseline (0.62)")
+    ax.axhline(0.62, color="brown", ls="--", lw=1.2, label="length-only baseline (0.62)")
     ax.set_xticks(range(5), ["none/\nminimal", "low/\n2k", "med/\n8k", "high/\n16k", "xhigh/\n32k"])
     ax.set_xlabel("Reasoning effort / thinking budget  (→ more)")
     ax.set_ylabel("Residualized AUROC  (signal beyond #tool_calls)")
-    ax.set_title("Exp 4 — On trajectories, reasoning HELPS (capable models)\n"
-                 "Haiku peaks at 16k; OpenAI line stuck at/below chance")
+    ax.set_title("Exp 4 — On trajectories, reasoning HELPS capable monitors\n"
+                 "Haiku peaks at 16k  (3 small OpenAI models below baseline omitted)")
     ax.legend(ncol=2, fontsize=9)
     fig.tight_layout(); fig.savefig(f"{FIG}/fig4_reasoning_traj.png"); plt.close(fig)
 
@@ -193,8 +197,7 @@ def fig5(traj):
                marker="s", zorder=3, edgecolor="white", label=f"levels set  (r={rl:+.2f})")
     for k, v in s3x3.items(): a1.annotate(k, v, fontsize=7, xytext=(4, 3), textcoords="offset points")
     for k, v in slvl.items(): a1.annotate(k, v, fontsize=7, xytext=(4, -10), textcoords="offset points")
-    a1.set_title("CODE backdoors: NO consistent capability↔calibration link\n"
-                 "(within-set only; one set nano-driven, the other ~0)")
+    a1.set_title("CODE backdoors: NO consistent capability↔calibration link")
     a1.set_xlabel("AUROC (capability)"); a1.set_ylabel("ECE  (lower = better calibrated)")
     a1.legend(loc="lower left", fontsize=8)
     # trajectory points

@@ -162,7 +162,7 @@ Full reasoning ladders (residualized AUROC, all n=112 unless noted):
 
 ![Exp 4 — residualized AUROC vs reasoning budget](figures/fig4_reasoning_traj.png)
 
-*Figure 4. Residualized AUROC vs reasoning budget. Capable models (Haiku, Gemini, GPT-5.2) clear the length-only baseline (0.62) and Haiku peaks at 16k before declining; the small OpenAI models (o3-mini, gpt-nano/mini) sit at or below chance at every effort.*
+*Figure 4. Residualized AUROC vs reasoning budget, for the three monitors that clear the length-only baseline (0.62); Haiku peaks at 16k before declining. The 3 small OpenAI models (o3-mini, gpt-5-nano, gpt-5-mini) sat at/below the baseline and are omitted for clarity (their numbers are in the ladders above and [S6]).*
 
 **Outcome.** Capable monitors **genuinely detect attacks** beyond the length confound:
 **Haiku (0.78) > Gemini (0.72) > GPT-5.2 (0.69)**, all significant on every test. The small
